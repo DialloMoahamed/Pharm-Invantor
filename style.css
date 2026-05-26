@@ -1,0 +1,171 @@
+body {
+  overflow-x: hidden;
+}
+
+.top-bar {
+  font-size: 14px;
+}
+
+.logo img {
+  max-width: 100%;
+  height: auto;
+}
+
+.search-box {
+  overflow: hidden;
+}
+
+.search-box input {
+  border: 1px solid #ddd;
+}
+
+.navbar-nav .nav-link {
+  font-weight: 500;
+  color: #000;
+  transition: 0.3s;
+}
+
+.navbar-nav .nav-link:hover {
+  color: #3eb3bd;
+}
+
+.category-card {
+  min-height: 100px;
+}
+
+.category-border {
+  border-right: 1px solid #ddd;
+}
+
+.icon-circle {
+  width: 55px;
+  height: 55px;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  border-radius: 50%;
+  flex-shrink: 0;
+}
+
+.imageb {
+    background-image: url(Pharma\ Ressources/Home-Images/h1-slider04.png) !important;
+    background-size: contain;
+    background-repeat: no-repeat;
+    background-position: bottom right;
+    background-size: 250px;
+    min-height: 500px !important;
+}
+.imagec {
+    background:
+        url("Pharma Ressources/Home-Images/hero-3.png") no-repeat right 40px bottom 20px,
+        linear-gradient(181deg, #3FA641 23%, #92C15F 100%);
+
+    background-size: 200px, cover;
+    min-height: 350px !important;
+}
+.imaged {
+    background:
+        url("Pharma Ressources/Home-Images/hero-1.png") no-repeat left center,
+        linear-gradient(360deg, #F197C9 46%, #40C1CE 61%);
+
+    background-size: 200px, cover;
+    min-height: 220px !important;
+}
+.imagee {
+    background:
+        url("Pharma Ressources/Home-Images/hero-2.png") no-repeat bottom right,
+        linear-gradient(344deg, #D9881B 31%, #D04629 82%);
+
+    background-size: 200px, cover;
+    min-height: 220px !important;
+}
+.imagef {
+    background:
+        url("Pharma Ressources/Home-Images/hero-4.png") no-repeat right 40px bottom 20px,
+        linear-gradient(357deg, #A1E6E9 0%, #12779A 100%);
+
+    background-size: 200px, cover;
+    min-height: 220px !important;
+}
+
+
+/* TABLET */
+@media (max-width: 991px) {
+  .header-wrapper {
+    gap: 20px;
+  }
+
+  .logo {
+    text-align: center;
+  }
+
+  .search-wrapper {
+    width: 100%;
+  }
+
+  .search-box {
+    width: 100%;
+  }
+
+  .account-section {
+    justify-content: center;
+    width: 100%;
+  }
+
+  .navbar .container {
+    padding: 0;
+  }
+
+  .navbar-nav {
+    gap: 10px;
+    padding-top: 10px;
+  }
+
+  .category-border {
+    border-right: none;
+  }
+}
+
+/* MOBILE */
+@media (max-width: 768px) {
+  .top-bar {
+    text-align: center;
+  }
+
+  .top-bar .container-fluid {
+    flex-direction: column;
+    gap: 10px;
+  }
+
+  .header-wrapper {
+    flex-direction: column;
+    text-align: center;
+  }
+
+  .logo img {
+    width: 220px !important;
+  }
+
+  .search-wrapper {
+    width: 100%;
+  }
+
+  .account-section {
+    flex-wrap: wrap;
+    gap: 10px;
+  }
+
+  .category-card {
+    justify-content: flex-start !important;
+    padding: 15px;
+    border-bottom: 1px solid #eee;
+  }
+
+  .category-content h6 {
+    font-size: 15px;
+  }
+
+  .category-content small {
+    font-size: 12px;
+  }
+}
