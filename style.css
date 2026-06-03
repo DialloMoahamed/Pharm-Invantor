@@ -47,47 +47,283 @@ body {
   flex-shrink: 0;
 }
 
+.promo-img {
+  max-height: 350px;
+  object-fit: contain;
+}
+
+.promo-banner img {
+  width: 100%;
+  max-width: 400px;
+  height: auto;
+}
+
 .imageb {
-    background-image: url(Pharma\ Ressources/Home-Images/h1-slider04.png) !important;
-    background-size: contain;
-    background-repeat: no-repeat;
-    background-position: bottom right;
-    background-size: 250px;
-    min-height: 500px !important;
+  background-image: url(Pharma\ Ressources/Home-Images/h1-slider04.png) !important;
+  background-size: contain;
+  background-repeat: no-repeat;
+  background-position: bottom right;
+  background-size: 250px;
+  min-height: 500px !important;
 }
 .imagec {
-    background:
-        url("Pharma Ressources/Home-Images/hero-3.png") no-repeat right 40px bottom 20px,
-        linear-gradient(181deg, #3FA641 23%, #92C15F 100%);
+  background:
+    url("Pharma Ressources/Home-Images/hero-3.png") no-repeat right 40px bottom
+      20px,
+    linear-gradient(181deg, #3fa641 23%, #92c15f 100%);
 
-    background-size: 200px, cover;
-    min-height: 350px !important;
+  background-size: 200px, cover;
+  min-height: 350px !important;
 }
 .imaged {
-    background:
-        url("Pharma Ressources/Home-Images/hero-1.png") no-repeat left center,
-        linear-gradient(360deg, #F197C9 46%, #40C1CE 61%);
+  background:
+    url("Pharma Ressources/Home-Images/hero-1.png") no-repeat left center,
+    linear-gradient(360deg, #f197c9 46%, #40c1ce 61%);
 
-    background-size: 200px, cover;
-    min-height: 220px !important;
+  background-size: 200px, cover;
+  min-height: 220px !important;
 }
 .imagee {
-    background:
-        url("Pharma Ressources/Home-Images/hero-2.png") no-repeat bottom right,
-        linear-gradient(344deg, #D9881B 31%, #D04629 82%);
+  background:
+    url("Pharma Ressources/Home-Images/hero-2.png") no-repeat bottom right,
+    linear-gradient(344deg, #d9881b 31%, #d04629 82%);
 
-    background-size: 200px, cover;
-    min-height: 220px !important;
+  background-size: 200px, cover;
+  min-height: 220px !important;
 }
 .imagef {
-    background:
-        url("Pharma Ressources/Home-Images/hero-4.png") no-repeat right 40px bottom 20px,
-        linear-gradient(357deg, #A1E6E9 0%, #12779A 100%);
+  background:
+    url("Pharma Ressources/Home-Images/hero-4.png") no-repeat right 40px bottom
+      20px,
+    linear-gradient(357deg, #a1e6e9 0%, #12779a 100%);
 
-    background-size: 200px, cover;
-    min-height: 220px !important;
+  background-size: 200px, cover;
+  min-height: 220px !important;
 }
 
+.custom-card {
+  position: relative;
+  margin-bottom: 40px;
+}
+
+.custom-card .card-img-top {
+  height: 250px;
+  object-fit: cover;
+  border-radius: 10px;
+}
+
+.logo-box {
+  position: absolute;
+  bottom: -20px;
+  left: 50%;
+  transform: translateX(-50%);
+  background: white;
+  width: 80%;
+  padding: 15px;
+  border-radius: 10px;
+  text-align: center;
+}
+
+.logo-img {
+  width: 100%;
+  max-width: 170px;
+  height: auto;
+}
+
+.category-product-card {
+  border-radius: 12px;
+  transition: all 0.3s ease;
+}
+
+.category-product-card:hover {
+  transform: translateY(-5px);
+}
+
+.card-img-wrapper {
+  height: 180px;
+
+  display: flex;
+  align-items: center;
+  justify-content: center;
+
+  padding: 20px;
+}
+
+.card-img-wrapper img {
+  width: 100%;
+  max-width: 140px;
+  height: auto;
+  object-fit: contain;
+}
+
+.category-product-card .card-title {
+  min-height: 50px;
+  font-size: 1.1rem;
+}
+
+.category-product-card .card-text {
+  font-size: 0.9rem;
+}
+
+.product-card {
+  max-width: 300px;
+  width: 100%;
+  border-radius: 15px;
+  box-shadow: 0 4px 15px rgba(0, 0, 0, 0.08);
+  transition: all 0.3s ease;
+}
+
+.product-card:hover {
+  transform: translateY(-5px);
+  box-shadow: 0 8px 25px rgba(0, 0, 0, 0.12);
+}
+
+.product-card .card-img-top {
+  max-height: 180px;
+  object-fit: contain;
+}
+
+.blog-img {
+  height: 220px; /* 👈 augmente ici si tu veux encore plus grand */
+  overflow: hidden;
+}
+
+.blog-img img {
+  height: 100%;
+  object-fit: cover;
+  transition: transform 0.4s ease;
+}
+
+/* petit effet moderne */
+.blog-card:hover img {
+  transform: scale(1.05);
+}
+
+/* tooltip1 */
+.custom-tooltip-container {
+  position: relative;
+}
+
+.custom-tooltip {
+  position: absolute;
+  left: 95%;
+  top: -20%;
+  transform: translateY(-50%);
+  width: 450px;
+
+  padding: 15px;
+  background: white;
+  border: 1px solid #333;
+  border-radius: 8px;
+
+  opacity: 0;
+  visibility: hidden;
+  transition: 0.3s;
+
+  z-index: 1000;
+}
+
+.custom-tooltip-container:hover .custom-tooltip {
+  opacity: 1;
+  visibility: visible;
+}
+
+/* tooltip2 */
+.custom-tooltip-container2 {
+  position: relative;
+}
+
+.custom-tooltip2 {
+  position: absolute;
+  left: 95%;
+  top: 50%;
+  transform: translateY(-50%);
+  width: 450px;
+
+  padding: 15px;
+  background: white;
+  border: 1px solid #333;
+  border-radius: 8px;
+
+  opacity: 0;
+  visibility: hidden;
+  transition: 0.3s;
+
+  z-index: 1000;
+}
+
+.custom-tooltip-container2:hover .custom-tooltip2 {
+  opacity: 1;
+  visibility: visible;
+}
+
+/* tooltip3 */
+.custom-tooltip-container3 {
+  position: relative;
+}
+
+.custom-tooltip3 {
+  position: absolute;
+  left: 95%;
+  top: 65%;
+  transform: translateY(-50%);
+  width: 450px;
+
+  padding: 15px;
+  background: white;
+  border: 1px solid #333;
+  border-radius: 8px;
+
+  opacity: 0;
+  visibility: hidden;
+  transition: 0.3s;
+
+  z-index: 1000;
+}
+
+.custom-tooltip-container3:hover .custom-tooltip3 {
+  opacity: 1;
+  visibility: visible;
+}
+
+.carde {
+    max-width: 1200px;
+}
+
+.image-preview {
+    width: 250px;
+    height: 150px;
+}
+
+.add-slot {
+    width: 250px;
+    height: 150px;
+    cursor: pointer;
+    transition: .3s;
+}
+
+.add-slot:hover {
+    background-color: rgba(13, 202, 240, 0.1);
+}
+
+@media (max-width: 768px) {
+
+    .image-preview,
+    .add-slot {
+        width: 100%;
+        max-width: 320px;
+        margin: auto;
+    }
+}
+
+@media (max-width: 1024px) {
+
+  .custom-tooltip,
+  .custom-tooltip2,
+  .custom-tooltip3 {
+    width: 345px !important;
+  }
+}
 
 /* TABLET */
 @media (max-width: 991px) {
@@ -124,10 +360,54 @@ body {
   .category-border {
     border-right: none;
   }
+
+  .card-img-wrapper {
+    height: 160px;
+  }
+
+  .card-img-wrapper img {
+    max-width: 120px;
+  }
+  .border-lg-end {
+    border-right: 1px solid #dee2e6;
+  }
+
+  .custom-tooltip2,
+  .custom-tooltip3 {
+    width: 320px;
+    left: 85%;
+    font-size: 0.9rem;
+  }
 }
 
 /* MOBILE */
 @media (max-width: 768px) {
+  .imagec,
+  .imaged,
+  .imagee,
+  .imagef {
+    background-size: 120px, cover;
+    min-height: 180px !important;
+  }
+
+  .imageb {
+    background-size: 150px;
+    min-height: 350px !important;
+  }
+
+  .promo-banner .card-body {
+    text-align: center;
+  }
+
+  .promo-banner .btn {
+    width: 100%;
+    justify-content: center !important;
+  }
+
+  .promo-banner h1 {
+    font-size: 2rem;
+  }
+
   .top-bar {
     text-align: center;
   }
@@ -167,5 +447,43 @@ body {
 
   .category-content small {
     font-size: 12px;
+  }
+
+  .card-img-wrapper {
+    height: 140px;
+  }
+
+  .card-img-wrapper img {
+    max-width: 100px;
+  }
+
+  .category-product-card .card-title {
+    font-size: 1rem;
+    min-height: auto;
+  }
+
+  .category-product-card .card-text {
+    font-size: 0.85rem;
+  }
+
+  .custom-tooltip,
+  .custom-tooltip2,
+  .custom-tooltip3 {
+    width: 250px;
+    left: 50%;
+    top: 110%;
+    transform: translateX(-50%);
+  }
+
+  .custom-tooltip {
+    top: 110%;
+  }
+
+  .custom-tooltip2 {
+    top: 110%;
+  }
+
+  .custom-tooltip3 {
+    top: 110%;
   }
 }

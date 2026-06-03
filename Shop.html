@@ -1,0 +1,903 @@
+<!DOCTYPE html>
+<html lang="fr">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Pharma-Shop - Produits</title>
+
+    <!-- Bootstrap -->
+    <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.3/dist/css/bootstrap.min.css" rel="stylesheet">
+
+    <!-- Bootstrap Icons -->
+    <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/bootstrap-icons@1.11.3/font/bootstrap-icons.min.css">
+    <link rel="stylesheet" href="style.css">
+</head>
+
+<body>
+
+    <!-- TOP BAR -->
+    <div class="top-bar text-white p-2" style="background-color: #3EB3BD;">
+        <div class="container-fluid d-flex justify-content-between align-items-center">
+
+            <span>
+                Livraison gratuite pour toute commande de plus de 10.000fcfa
+            </span>
+
+            <div class="d-flex gap-4">
+                <i class="bi bi-facebook fs-5"></i>
+                <i class="bi bi-twitter-x fs-5"></i>
+                <i class="bi bi-instagram fs-5"></i>
+                <i class="bi bi-google fs-5"></i>
+            </div>
+
+        </div>
+    </div>
+
+    <!-- HEADER -->
+    <div class="container-fluid py-4">
+
+        <div class="d-flex align-items-center justify-content-between flex-wrap header-wrapper">
+
+            <!-- LOGO -->
+            <div class="logo">
+                <img src="Pharma Ressources/Home-Images/Brand-Logo.png" alt="Pharma-Shop Logo" class="img-fluid"
+                    style="width: 340px;">
+            </div>
+
+            <!-- SEARCH + NAV -->
+            <div class="search-wrapper">
+
+                <!-- SEARCH -->
+                <div class="input-group search-box rounded-5 mb-3">
+                    <input type="text" class="form-control p-2" placeholder="Rechercher...">
+
+                    <button class="btn text-white border-0" style="background-color: #3EB3BD;" type="button">
+
+                        <i class="bi bi-search"></i>
+
+                    </button>
+                </div>
+
+                <!-- NAVBAR -->
+                <nav class="navbar navbar-expand-lg">
+
+                    <div class="container-fluid p-0">
+
+                        <button class="navbar-toggler" type="button" data-bs-toggle="collapse"
+                            data-bs-target="#navMenu">
+
+                            <span class="navbar-toggler-icon"></span>
+
+                        </button>
+
+                        <div class="collapse navbar-collapse" id="navMenu">
+
+                            <ul class="navbar-nav mx-auto">
+
+                                <li class="nav-item">
+                                    <a class="nav-link" href="index.html">Home +</a>
+                                </li>
+
+                                <li class="nav-item">
+                                    <a class="nav-link" href="#">Shop +</a>
+                                </li>
+
+                                <li class="nav-item">
+                                    <a class="nav-link" href="#">Blogs +</a>
+                                </li>
+
+                                <li class="nav-item">
+                                    <a class="nav-link" href="#">Page +</a>
+                                </li>
+
+                                <li class="nav-item">
+                                    <a class="nav-link" href="#">On Sale +</a>
+                                </li>
+
+                                <li class="nav-item">
+                                    <a class="nav-link" href="#">Contact +</a>
+                                </li>
+
+                            </ul>
+
+                        </div>
+
+                    </div>
+
+                </nav>
+
+            </div>
+
+            <!-- ACCOUNT -->
+            <div class="d-flex align-items-center gap-3 account-section">
+
+                <a href="#" class="text-dark text-decoration-none">
+                    SIGN IN
+                </a>
+
+                <a href="#" class="text-dark text-decoration-none">
+                    / SIGN UP
+                </a>
+
+                <i class="bi bi-heart fs-4"></i>
+
+                <div class="d-flex align-items-center gap-2">
+                    <i class="bi bi-bag fs-4"></i>
+                    <span>0 fcfa</span>
+                </div>
+
+            </div>
+
+        </div>
+    </div>
+
+    <!-- CONTENT -->
+    <div class="container-fluid py-5">
+
+        <div class="row">
+
+            <!-- SIDEBAR -->
+            <div class="col-lg-3">
+
+                <h5 class="sidebar-title mb-4">FILTRER PAR CATEGORIES</h5>
+
+                <div class="category-item mb-3 d-flex align-items-center gap-2">
+                    <img src="Pharma Ressources/Categories Icons/category-bucco.svg" style="width: 35px;" alt="">
+                    <span class="fw-bold">BUCCO-DENTAIRE</span>
+                </div>
+
+                <div class="category-item mb-3 d-flex align-items-center gap-2">
+                    <img src="Pharma Ressources/Categories Icons/category-soins.svg" style="width: 35px;" alt="">
+                    <span class="fw-bold">SOINS & LOTIONS</span>
+                </div>
+
+                <div class="category-item mb-3 d-flex align-items-center gap-2">
+                    <img src="Pharma Ressources/Categories Icons/category-huiles.svg" style="width: 35px;" alt="">
+                    <span class="fw-bold">HUILES & EXTRAITS</span>
+                </div>
+
+                <div class="category-item mb-3 d-flex align-items-center gap-2">
+                    <img src="Pharma Ressources/Categories Icons/category-médicaments.svg" style="width: 35px;" alt="">
+                    <span class="fw-bold">MEDICAMENTS</span>
+                </div>
+
+                <div class="category-item mb-3 d-flex align-items-center gap-2">
+                    <img src="Pharma Ressources/Categories Icons/category-sirop.svg" style="width: 35px;" alt="">
+                    <span class="fw-bold">SIROP & SOLUTION</span>
+                </div>
+
+                <div class="category-item mb-3 d-flex align-items-center gap-2">
+                    <img src="Pharma Ressources/Categories Icons/category-protection.svg" style="width: 35px;" alt="">
+                    <span class="fw-bold">PROTECTIONS</span>
+                </div>
+
+                <div class="category-item mb-3 d-flex align-items-center gap-2">
+                    <img src="Pharma Ressources/Categories Icons/category-dispositif.svg" style="width: 35px;" alt="">
+                    <span class="fw-bold">APPAREILS & DISPOSITIFS</span>
+                </div>
+
+                <div class="category-item mb-3 d-flex align-items-center gap-2">
+                    <img src="Pharma Ressources/Categories Icons/category-vitamin.svg" style="width: 35px;" alt="">
+                    <span class="fw-bold">VITAMINES & SUPPLEMENTS</span>
+                </div>
+
+                <h5 class="sidebar-title mt-5">
+                    FILTRER PAR PRIX
+                </h5>
+
+                <input type="range" class="w-100" min="0" max="100000" step="500" id="priceRange">
+                <div class="d-flex justify-content-between mt-2">
+                    <small>Prix entre 1000 fcfa - 100000 fcfa</small>
+                    <span>FILTRER</span>
+                </div>
+
+                <img src="Pharma Ressources/Home-Images/pub-1.jpg" alt="Publicité" class="img-fluid mt-4">
+            </div>
+
+            <!-- PRODUCTS -->
+            <div class="col-lg-9">
+
+                <div class="d-flex justify-content-between align-items-center mb-4 mt-4">
+
+                    <div class="d-flex align-items-center gap-3">
+                        <svg version="1.1" id="svg15551" width="40" height="40" viewBox="0 0 77.102364 75.590553"
+                            xmlns="http://www.w3.org/2000/svg" xmlns:svg="http://www.w3.org/2000/svg">
+                            <defs id="defs15555" />
+                            <g id="g15557">
+                                <path style="fill:#3EB3BD;stroke-width:0.755906"
+                                    d="m 0,64.629923 v -10.96063 h 10.96063 10.96063 v 10.96063 10.96063 H 10.96063 0 Z m 27.212599,0 v -10.96063 h 11.338583 11.338583 v 10.96063 10.96063 H 38.551182 27.212599 Z m 27.968505,0 v -10.96063 h 10.96063 10.96063 v 10.96063 10.96063 H 66.141734 55.181104 Z M 0,37.795276 V 26.456694 H 10.96063 21.92126 V 37.795276 49.133859 H 10.96063 0 Z M 27.551838,48.171691 C 27.339967,47.619564 27.262003,42.592858 27.378585,37.001235 l 0.211967,-10.166589 h 10.96063 10.96063 v 10.96063 10.960631 L 38.724436,48.965733 C 30.303952,49.129521 27.852537,48.955299 27.551838,48.171691 Z M 55.181104,37.795276 V 26.456694 h 10.96063 10.96063 V 37.795276 49.133859 H 66.141734 55.181104 Z M 0,10.96063 V 0 H 10.96063 21.92126 V 10.96063 21.92126 H 10.96063 0 Z m 27.212599,0 V 0 H 38.551182 49.889765 V 10.96063 21.92126 H 38.551182 27.212599 Z m 27.968505,0 V 0 h 10.96063 10.96063 v 10.96063 10.96063 h -10.96063 -10.96063 z"
+                                    id="path16616" />
+                            </g>
+                        </svg>
+                        <img src="Pharma Ressources/Categories Icons/menu-list.svg" style="width: 40px;" alt="">
+                        <span>1-9 sur 150 éléments visible</span>
+                    </div>
+
+                    <select class="form-select w-auto">
+                        <option>Trier par nom</option>
+                    </select>
+                </div>
+
+                <div class="row g-4 mt-4 justify-content-center">
+
+                    <!-- PRODUCT -->
+                    <div class="col-12 col-md-6 col-lg-4 d-flex justify-content-center">
+                        <a href="detail_produit.html" class="text-decoration-none">
+                        <div class="card h-100 border-0 product-card">
+                            <div class="d-flex justify-content-between align-items-center p-3" style="color: #3EB3BD;">
+                                <span>New</span>
+                                <span>-20%</span>
+                            </div>
+                            <div class="d-flex justify-content-center align-items-center">
+                                <img src="Pharma Ressources/Product-Images/product5.jpg" class="card-img-top w-50"
+                                    alt="">
+                            </div>
+                            <div class="card-body">
+                                <div class="d-flex align-items-center justify-content-end gap-2 text-warning">
+                                    <i class="bi bi-star-fill"></i>
+                                    <i class="bi bi-star-fill"></i>
+                                    <i class="bi bi-star-fill"></i>
+                                    <i class="bi bi-star-half"></i>
+                                    <i class="bi bi-star"></i>
+                                </div>
+                                <h5 class="card-title">Name of product 1</h5>
+                                <div class="d-flex align-items-center justify-content-center">
+                                    <span class="fs-4" style="color: #3EB3BD;">PRICE</span>
+                                </div>
+                                <button
+                                    class="btn text-white w-100 mt-3 d-flex align-items-center justify-content-center gap-2"
+                                    style="background-color: #3EB3BD;">
+                                    <i class="bi bi-bag-plus-fill"></i>
+                                    Ajouter au panier
+                                </button>
+                                <div class="d-flex justify-content-between align-items-center mt-3">
+                                    <small style="font-size: x-small;"><i class="bi bi-eye"></i> Aperçu du produit</small>
+                                    <small style="font-size: x-small;"><i class="bi bi-heart"></i> Ajouter à la liste de souhaits</small>
+                                </div>
+                            </div>
+                        </div>
+                        </a>
+                    </div>
+                    <div class="col-12 col-sm-6 col-lg-4 d-flex justify-content-center">
+                        <div class="card h-100 border-0 product-card">
+                            <div class="d-flex justify-content-between align-items-center p-3" style="color: #3EB3BD;">
+                                <span>New</span>
+                                <span>-20%</span>
+                            </div>
+                            <div class="d-flex justify-content-center align-items-center">
+                                <img src="Pharma Ressources/Product-Images/product39.jpg" class="card-img-top w-50"
+                                    alt="">
+                            </div>
+                            <div class="card-body">
+                                <div class="d-flex align-items-center justify-content-end gap-2 text-warning">
+                                    <i class="bi bi-star-fill"></i>
+                                    <i class="bi bi-star-fill"></i>
+                                    <i class="bi bi-star-fill"></i>
+                                    <i class="bi bi-star-half"></i>
+                                    <i class="bi bi-star"></i>
+                                </div>
+                                <h5 class="card-title">Name of product 1</h5>
+                                <div class="d-flex align-items-center justify-content-center">
+                                    <span class="fs-4" style="color: #3EB3BD;">PRICE</span>
+                                </div>
+                                <button
+                                    class="btn text-white w-100 mt-3 d-flex align-items-center justify-content-center gap-2"
+                                    style="background-color: #3EB3BD;">
+                                    <i class="bi bi-bag-plus-fill"></i>
+                                    Ajouter au panier
+                                </button>
+                                <div class="d-flex justify-content-between align-items-center mt-3">
+                                    <small style="font-size: x-small;"><i class="bi bi-eye"></i> Aperçu du produit</small>
+                                    <small style="font-size: x-small;"><i class="bi bi-heart"></i> Ajouter à la liste de souhaits</small>
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+                    <div class="col-12 col-sm-6 col-lg-4 d-flex justify-content-center">
+                        <div class="card h-100 border-0 product-card">
+                            <div class="d-flex justify-content-between align-items-center p-3" style="color: #3EB3BD;">
+                                <span>New</span>
+                                <span>-20%</span>
+                            </div>
+                            <div class="d-flex justify-content-center align-items-center">
+                                <img src="Pharma Ressources/Product-Images/product40.jpg" class="card-img-top w-50"
+                                    alt="">
+                            </div>
+                            <div class="card-body">
+                                <div class="d-flex align-items-center justify-content-end gap-2 text-warning">
+                                    <i class="bi bi-star-fill"></i>
+                                    <i class="bi bi-star-fill"></i>
+                                    <i class="bi bi-star-fill"></i>
+                                    <i class="bi bi-star-half"></i>
+                                    <i class="bi bi-star"></i>
+                                </div>
+                                <h5 class="card-title">Name of product 1</h5>
+                                <div class="d-flex align-items-center justify-content-center">
+                                    <span class="fs-4" style="color: #3EB3BD;">PRICE</span>
+                                </div>
+                                <button
+                                    class="btn text-white w-100 mt-3 d-flex align-items-center justify-content-center gap-2"
+                                    style="background-color: #3EB3BD;">
+                                    <i class="bi bi-bag-plus-fill"></i>
+                                    Ajouter au panier
+                                </button>
+                                <div class="d-flex justify-content-between align-items-center mt-3">
+                                    <small style="font-size: x-small;"><i class="bi bi-eye"></i> Aperçu du produit</small>
+                                    <small style="font-size: x-small;"><i class="bi bi-heart"></i> Ajouter à la liste de souhaits</small>
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+                    <div class="col-12 col-sm-6 col-lg-4 d-flex justify-content-center">
+                        <div class="card h-100 border-0 product-card">
+                            <div class="d-flex justify-content-between align-items-center p-3" style="color: #3EB3BD;">
+                                <span>New</span>
+                                <span>-20%</span>
+                            </div>
+                            <div class="d-flex justify-content-center align-items-center">
+                                <img src="Pharma Ressources/Product-Images/product41.jpg" class="card-img-top w-50"
+                                    alt="">
+                            </div>
+                            <div class="card-body">
+                                <div class="d-flex align-items-center justify-content-end gap-2 text-warning">
+                                    <i class="bi bi-star-fill"></i>
+                                    <i class="bi bi-star-fill"></i>
+                                    <i class="bi bi-star-fill"></i>
+                                    <i class="bi bi-star-half"></i>
+                                    <i class="bi bi-star"></i>
+                                </div>
+                                <h5 class="card-title">Name of product 1</h5>
+                                <div class="d-flex align-items-center justify-content-center">
+                                    <span class="fs-4" style="color: #3EB3BD;">PRICE</span>
+                                </div>
+                                <button
+                                    class="btn text-white w-100 mt-3 d-flex align-items-center justify-content-center gap-2"
+                                    style="background-color: #3EB3BD;">
+                                    <i class="bi bi-bag-plus-fill"></i>
+                                    Ajouter au panier
+                                </button>
+                                <div class="d-flex justify-content-between align-items-center mt-3">
+                                    <small style="font-size: x-small;"><i class="bi bi-eye"></i> Aperçu du produit</small>
+                                    <small style="font-size: x-small;"><i class="bi bi-heart"></i> Ajouter à la liste de souhaits</small>
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+                    <div class="col-12 col-sm-6 col-lg-4 d-flex justify-content-center">
+                        <div class="card h-100 border-0 product-card">
+                            <div class="d-flex justify-content-between align-items-center p-3" style="color: #3EB3BD;">
+                                <span>New</span>
+                                <span>-20%</span>
+                            </div>
+                            <div class="d-flex justify-content-center align-items-center">
+                                <img src="Pharma Ressources/Product-Images/product42.jpg" class="card-img-top w-50"
+                                    alt="">
+                            </div>
+                            <div class="card-body">
+                                <div class="d-flex align-items-center justify-content-end gap-2 text-warning">
+                                    <i class="bi bi-star-fill"></i>
+                                    <i class="bi bi-star-fill"></i>
+                                    <i class="bi bi-star-fill"></i>
+                                    <i class="bi bi-star-half"></i>
+                                    <i class="bi bi-star"></i>
+                                </div>
+                                <h5 class="card-title">Name of product 1</h5>
+                                <div class="d-flex align-items-center justify-content-center">
+                                    <span class="fs-4" style="color: #3EB3BD;">PRICE</span>
+                                </div>
+                                <button
+                                    class="btn text-white w-100 mt-3 d-flex align-items-center justify-content-center gap-2"
+                                    style="background-color: #3EB3BD;">
+                                    <i class="bi bi-bag-plus-fill"></i>
+                                    Ajouter au panier
+                                </button>
+                                <div class="d-flex justify-content-between align-items-center mt-3">
+                                    <small style="font-size: x-small;"><i class="bi bi-eye"></i> Aperçu du produit</small>
+                                    <small style="font-size: x-small;"><i class="bi bi-heart"></i> Ajouter à la liste de souhaits</small>
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+                    <div class="col-12 col-sm-6 col-lg-4 d-flex justify-content-center">
+                        <div class="card h-100 border-0 product-card">
+                            <div class="d-flex justify-content-between align-items-center p-3" style="color: #3EB3BD;">
+                                <span>New</span>
+                                <span>-20%</span>
+                            </div>
+                            <div class="d-flex justify-content-center align-items-center">
+                                <img src="Pharma Ressources/Product-Images/product43.jpg" class="card-img-top w-50"
+                                    alt="">
+                            </div>
+                            <div class="card-body">
+                                <div class="d-flex align-items-center justify-content-end gap-2 text-warning">
+                                    <i class="bi bi-star-fill"></i>
+                                    <i class="bi bi-star-fill"></i>
+                                    <i class="bi bi-star-fill"></i>
+                                    <i class="bi bi-star-half"></i>
+                                    <i class="bi bi-star"></i>
+                                </div>
+                                <h5 class="card-title">Name of product 1</h5>
+                                <div class="d-flex align-items-center justify-content-center">
+                                    <span class="fs-4" style="color: #3EB3BD;">PRICE</span>
+                                </div>
+                                <button
+                                    class="btn text-white w-100 mt-3 d-flex align-items-center justify-content-center gap-2"
+                                    style="background-color: #3EB3BD;">
+                                    <i class="bi bi-bag-plus-fill"></i>
+                                    Ajouter au panier
+                                </button>
+                                <div class="d-flex justify-content-between align-items-center mt-3">
+                                    <small style="font-size: x-small;"><i class="bi bi-eye"></i> Aperçu du produit</small>
+                                    <small style="font-size: x-small;"><i class="bi bi-heart"></i> Ajouter à la liste de souhaits</small>
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+                    <div class="col-12 col-sm-6 col-lg-4 d-flex justify-content-center">
+                        <div class="card h-100 border-0 product-card">
+                            <div class="d-flex justify-content-between align-items-center p-3" style="color: #3EB3BD;">
+                                <span>New</span>
+                                <span>-20%</span>
+                            </div>
+                            <div class="d-flex justify-content-center align-items-center">
+                                <img src="Pharma Ressources/Product-Images/product44.jpg" class="card-img-top w-50"
+                                    alt="">
+                            </div>
+                            <div class="card-body">
+                                <div class="d-flex align-items-center justify-content-end gap-2 text-warning">
+                                    <i class="bi bi-star-fill"></i>
+                                    <i class="bi bi-star-fill"></i>
+                                    <i class="bi bi-star-fill"></i>
+                                    <i class="bi bi-star-half"></i>
+                                    <i class="bi bi-star"></i>
+                                </div>
+                                <h5 class="card-title">Name of product 1</h5>
+                                <div class="d-flex align-items-center justify-content-center">
+                                    <span class="fs-4" style="color: #3EB3BD;">PRICE</span>
+                                </div>
+                                <button
+                                    class="btn text-white w-100 mt-3 d-flex align-items-center justify-content-center gap-2"
+                                    style="background-color: #3EB3BD;">
+                                    <i class="bi bi-bag-plus-fill"></i>
+                                    Ajouter au panier
+                                </button>
+                                <div class="d-flex justify-content-between align-items-center mt-3">
+                                    <small style="font-size: x-small;"><i class="bi bi-eye"></i> Aperçu du produit</small>
+                                    <small style="font-size: x-small;"><i class="bi bi-heart"></i> Ajouter à la liste de souhaits</small>
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+                    <div class="col-12 col-sm-6 col-lg-4 d-flex justify-content-center">
+                        <div class="card h-100 border-0 product-card">
+                            <div class="d-flex justify-content-between align-items-center p-3" style="color: #3EB3BD;">
+                                <span>New</span>
+                                <span>-20%</span>
+                            </div>
+                            <div class="d-flex justify-content-center align-items-center">
+                                <img src="Pharma Ressources/Product-Images/product45.jpg" class="card-img-top w-50"
+                                    alt="">
+                            </div>
+                            <div class="card-body">
+                                <div class="d-flex align-items-center justify-content-end gap-2 text-warning">
+                                    <i class="bi bi-star-fill"></i>
+                                    <i class="bi bi-star-fill"></i>
+                                    <i class="bi bi-star-fill"></i>
+                                    <i class="bi bi-star-half"></i>
+                                    <i class="bi bi-star"></i>
+                                </div>
+                                <h5 class="card-title">Name of product 1</h5>
+                                <div class="d-flex align-items-center justify-content-center">
+                                    <span class="fs-4" style="color: #3EB3BD;">PRICE</span>
+                                </div>
+                                <button
+                                    class="btn text-white w-100 mt-3 d-flex align-items-center justify-content-center gap-2"
+                                    style="background-color: #3EB3BD;">
+                                    <i class="bi bi-bag-plus-fill"></i>
+                                    Ajouter au panier
+                                </button>
+                                <div class="d-flex justify-content-between align-items-center mt-3">
+                                    <small style="font-size: x-small;"><i class="bi bi-eye"></i> Aperçu du produit</small>
+                                    <small style="font-size: x-small;"><i class="bi bi-heart"></i> Ajouter à la liste de souhaits</small>
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+                    <div class="col-12 col-sm-6 col-lg-4 d-flex justify-content-center">
+                        <div class="card h-100 border-0 product-card">
+                            <div class="d-flex justify-content-between align-items-center p-3" style="color: #3EB3BD;">
+                                <span>New</span>
+                                <span>-20%</span>
+                            </div>
+                            <div class="d-flex justify-content-center align-items-center">
+                                <img src="Pharma Ressources/Product-Images/product46.jpg" class="card-img-top w-50"
+                                    alt="">
+                            </div>
+                            <div class="card-body">
+                                <div class="d-flex align-items-center justify-content-end gap-2 text-warning">
+                                    <i class="bi bi-star-fill"></i>
+                                    <i class="bi bi-star-fill"></i>
+                                    <i class="bi bi-star-fill"></i>
+                                    <i class="bi bi-star-half"></i>
+                                    <i class="bi bi-star"></i>
+                                </div>
+                                <h5 class="card-title">Name of product 1</h5>
+                                <div class="d-flex align-items-center justify-content-center">
+                                    <span class="fs-4" style="color: #3EB3BD;">PRICE</span>
+                                </div>
+                                <button
+                                    class="btn text-white w-100 mt-3 d-flex align-items-center justify-content-center gap-2"
+                                    style="background-color: #3EB3BD;">
+                                    <i class="bi bi-bag-plus-fill"></i>
+                                    Ajouter au panier
+                                </button>
+                                <div class="d-flex justify-content-between align-items-center mt-3">
+                                    <small style="font-size: x-small;"><i class="bi bi-eye"></i> Aperçu du produit</small>
+                                    <small style="font-size: x-small;"><i class="bi bi-heart"></i> Ajouter à la liste de souhaits</small>
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+                    <div class="col-12 col-sm-6 col-lg-4 d-flex justify-content-center">
+                        <div class="card h-100 border-0 product-card">
+                            <div class="d-flex justify-content-between align-items-center p-3" style="color: #3EB3BD;">
+                                <span>New</span>
+                                <span>-20%</span>
+                            </div>
+                            <div class="d-flex justify-content-center align-items-center">
+                                <img src="Pharma Ressources/Product-Images/product47.jpg" class="card-img-top w-50"
+                                    alt="">
+                            </div>
+                            <div class="card-body">
+                                <div class="d-flex align-items-center justify-content-end gap-2 text-warning">
+                                    <i class="bi bi-star-fill"></i>
+                                    <i class="bi bi-star-fill"></i>
+                                    <i class="bi bi-star-fill"></i>
+                                    <i class="bi bi-star-half"></i>
+                                    <i class="bi bi-star"></i>
+                                </div>
+                                <h5 class="card-title">Name of product 1</h5>
+                                <div class="d-flex align-items-center justify-content-center">
+                                    <span class="fs-4" style="color: #3EB3BD;">PRICE</span>
+                                </div>
+                                <button
+                                    class="btn text-white w-100 mt-3 d-flex align-items-center justify-content-center gap-2"
+                                    style="background-color: #3EB3BD;">
+                                    <i class="bi bi-bag-plus-fill"></i>
+                                    Ajouter au panier
+                                </button>
+                                <div class="d-flex justify-content-between align-items-center mt-3">
+                                    <small style="font-size: x-small;"><i class="bi bi-eye"></i> Aperçu du produit</small>
+                                    <small style="font-size: x-small;"><i class="bi bi-heart"></i> Ajouter à la liste de souhaits</small>
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+                    <div class="col-12 col-sm-6 col-lg-4 d-flex justify-content-center">
+                        <div class="card h-100 border-0 product-card">
+                            <div class="d-flex justify-content-between align-items-center p-3" style="color: #3EB3BD;">
+                                <span>New</span>
+                                <span>-20%</span>
+                            </div>
+                            <div class="d-flex justify-content-center align-items-center">
+                                <img src="Pharma Ressources/Product-Images/product48.jpg" class="card-img-top w-50"
+                                    alt="">
+                            </div>
+                            <div class="card-body">
+                                <div class="d-flex align-items-center justify-content-end gap-2 text-warning">
+                                    <i class="bi bi-star-fill"></i>
+                                    <i class="bi bi-star-fill"></i>
+                                    <i class="bi bi-star-fill"></i>
+                                    <i class="bi bi-star-half"></i>
+                                    <i class="bi bi-star"></i>
+                                </div>
+                                <h5 class="card-title">Name of product 1</h5>
+                                <div class="d-flex align-items-center justify-content-center">
+                                    <span class="fs-4" style="color: #3EB3BD;">PRICE</span>
+                                </div>
+                                <button
+                                    class="btn text-white w-100 mt-3 d-flex align-items-center justify-content-center gap-2"
+                                    style="background-color: #3EB3BD;">
+                                    <i class="bi bi-bag-plus-fill"></i>
+                                    Ajouter au panier
+                                </button>
+                                <div class="d-flex justify-content-between align-items-center mt-3">
+                                    <small style="font-size: x-small;"><i class="bi bi-eye"></i> Aperçu du produit</small>
+                                    <small style="font-size: x-small;"><i class="bi bi-heart"></i> Ajouter à la liste de souhaits</small>
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+                    <div class="col-12 col-sm-6 col-lg-4 d-flex justify-content-center">
+                        <div class="card h-100 border-0 product-card">
+                            <div class="d-flex justify-content-between align-items-center p-3" style="color: #3EB3BD;">
+                                <span>New</span>
+                                <span>-20%</span>
+                            </div>
+                            <div class="d-flex justify-content-center align-items-center">
+                                <img src="Pharma Ressources/Product-Images/product49.jpg" class="card-img-top w-50"
+                                    alt="">
+                            </div>
+                            <div class="card-body">
+                                <div class="d-flex align-items-center justify-content-end gap-2 text-warning">
+                                    <i class="bi bi-star-fill"></i>
+                                    <i class="bi bi-star-fill"></i>
+                                    <i class="bi bi-star-fill"></i>
+                                    <i class="bi bi-star-half"></i>
+                                    <i class="bi bi-star"></i>
+                                </div>
+                                <h5 class="card-title">Name of product 1</h5>
+                                <div class="d-flex align-items-center justify-content-center">
+                                    <span class="fs-4" style="color: #3EB3BD;">PRICE</span>
+                                </div>
+                                <button
+                                    class="btn text-white w-100 mt-3 d-flex align-items-center justify-content-center gap-2"
+                                    style="background-color: #3EB3BD;">
+                                    <i class="bi bi-bag-plus-fill"></i>
+                                    Ajouter au panier
+                                </button>
+                                <div class="d-flex justify-content-between align-items-center mt-3">
+                                    <small style="font-size: x-small;"><i class="bi bi-eye"></i> Aperçu du produit</small>
+                                    <small style="font-size: x-small;"><i class="bi bi-heart"></i> Ajouter à la liste de souhaits</small>
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+
+                <nav class="mt-5 d-flex justify-content-center">
+                    <ul class="pagination">
+                        <li class="page-item active">
+                            <a class="page-link">1</a>
+                        </li>
+
+                        <li class="page-item">
+                            <a class="page-link">2</a>
+                        </li>
+
+                        <li class="page-item">
+                            <a class="page-link">NEXT ></a>
+                        </li>
+                    </ul>
+                </nav>
+
+            </div>
+        </div>
+    </div>
+
+    <!-- NEWSLETTER -->
+    <section class="newsletter">
+        <div class="container">
+            <h3>Inscrivez vous à notre Newsletter</h3>
+            <p>
+                Rejoignez 60.000+ nouveaux adhérents et obtenez
+                un nouveau coupon de réduction chaque Samedi
+            </p>
+        </div>
+    </section>
+
+    <!-- INFOS -->
+    <div class="container mt-5">
+        <div class="row justify-content-center g-4">
+            <div class="col-12 col-md-6 col-lg-4">
+                <div class="card border-0 h-100">
+                    <div class="card-body d-flex align-items-center justify-content-center gap-3">
+                        <i class="bi bi-globe" style="font-size: 70px;"></i>
+
+                        <div class="d-flex flex-column">
+                            <h5 class="mb-1">Niamey, Niger</h5>
+                            <span>Niamey, Niger</span>
+                            <span class="fw-bold fs-6">BP 12000</span>
+                        </div>
+                    </div>
+                </div>
+            </div>
+
+            <div class="col-12 col-md-6 col-lg-4">
+                <div class="card border-0 h-100">
+                    <div class="card-body d-flex align-items-center justify-content-center gap-3">
+                        <i class="bi bi-phone-vibrate" style="font-size: 70px;"></i>
+
+                        <div class="d-flex flex-column">
+                            <h5 class="mb-1">Pour tous contact</h5>
+                            <span>Consulter ce numero</span>
+                            <span class="fw-bold fs-6">+227 00 00 00 00</span>
+                        </div>
+                    </div>
+                </div>
+            </div>
+
+            <div class="col-12 col-md-6 col-lg-4">
+                <div class="card border-0 h-100 text-center">
+                    <div class="card-body d-flex flex-column align-items-center justify-content-center">
+                        <p class="fw-bold mb-3">
+                            Télécharger notre app maintenant
+                        </p>
+
+                        <div class="d-flex flex-wrap justify-content-center gap-3">
+                            <img src="Pharma Ressources/Home-Images/app-store.png" alt="App Store" class="store-badge">
+
+                            <img src="Pharma Ressources/Home-Images/google-play.png" alt="Google Play"
+                                class="store-badge">
+                        </div>
+                    </div>
+                </div>
+            </div>
+
+        </div>
+    </div>
+
+    <!-- FOOTER -->
+    <footer class="mt-5">
+
+        <hr class="my-4">
+
+        <div class="container-fluid py-5">
+
+            <div class="row g-4">
+
+                <!-- Logo -->
+                <div class="col-lg-4 col-md-6 border-end">
+                    <a href="#" class="d-flex align-items-center text-decoration-none mb-3">
+                        <img src="Pharma Ressources/Home-Images/Logo.svg" alt="Pharma-Shop" class="img-fluid"
+                            style="max-width: 50px;">
+
+                        <span class="ms-2 fs-4 fw-bold text-dark">
+                            Pharma-Shop
+                        </span>
+                    </a>
+
+                    <p class="text-secondary lh-lg">
+                        Pharma-Shop est votre pharmacie en ligne de confiance au Niger.
+                        Nous proposons une large gamme de produits pharmaceutiques
+                        et parapharmaceutiques de qualité.
+                    </p>
+                </div>
+
+                <!-- Informations -->
+                <div class="col-lg-2 col-md-6 col-6">
+                    <h6 class="fw-bold mb-3">INFORMATIONS</h6>
+
+                    <ul class="list-unstyled m-0">
+                        <li class="mb-2">
+                            <a href="#" class="text-decoration-none text-secondary">
+                                Dernières nouvelles
+                            </a>
+                        </li>
+
+                        <li class="mb-2">
+                            <a href="#" class="text-decoration-none text-secondary">
+                                Nos pharmacies
+                            </a>
+                        </li>
+
+                        <li class="mb-2">
+                            <a href="#" class="text-decoration-none text-secondary">
+                                Programme d'affiliation
+                            </a>
+                        </li>
+
+                        <li class="mb-2">
+                            <a href="#" class="text-decoration-none text-secondary">
+                                Carrières
+                            </a>
+                        </li>
+                    </ul>
+                </div>
+
+                <!-- Catégories -->
+                <div class="col-lg-2 col-md-6 col-6">
+                    <h6 class="fw-bold mb-3">CATÉGORIES</h6>
+
+                    <ul class="list-unstyled m-0">
+                        <li class="mb-2">
+                            <a href="#" class="text-decoration-none text-secondary">
+                                Médicaments
+                            </a>
+                        </li>
+
+                        <li class="mb-2">
+                            <a href="#" class="text-decoration-none text-secondary">
+                                Beauté & Soins
+                            </a>
+                        </li>
+
+                        <li class="mb-2">
+                            <a href="#" class="text-decoration-none text-secondary">
+                                Bébé & Maman
+                            </a>
+                        </li>
+
+                        <li class="mb-2">
+                            <a href="#" class="text-decoration-none text-secondary">
+                                Hygiène
+                            </a>
+                        </li>
+                    </ul>
+                </div>
+
+                <!-- Services -->
+                <div class="col-lg-2 col-md-6 col-6 border-end">
+                    <h6 class="fw-bold mb-3">SERVICES</h6>
+
+                    <ul class="list-unstyled m-0">
+                        <li class="mb-2">
+                            <a href="#" class="text-decoration-none text-secondary">
+                                Livraison
+                            </a>
+                        </li>
+
+                        <li class="mb-2">
+                            <a href="#" class="text-decoration-none text-secondary">
+                                Retours
+                            </a>
+                        </li>
+
+                        <li class="mb-2">
+                            <a href="#" class="text-decoration-none text-secondary">
+                                Contact
+                            </a>
+                        </li>
+
+                        <li class="mb-2">
+                            <a href="#" class="text-decoration-none text-secondary">
+                                FAQ
+                            </a>
+                        </li>
+                    </ul>
+                </div>
+
+                <!-- Réseaux -->
+                <div class="col-lg-2 col-md-6 col-6">
+                    <h6 class="fw-bold mb-3">SUIVEZ-NOUS</h6>
+
+                    <div class="d-flex flex-column">
+                        <a href="#" class="text-black d-flex align-items-center text-decoration-none gap-3 mb-2">
+                            <i class="bi bi-facebook fs-4"></i>
+                            <span class="text-muted">Facebook</span>
+                        </a>
+
+                        <a href="#" class="text-black d-flex align-items-center text-decoration-none gap-3 mb-2">
+                            <i class="bi bi-twitter-x fs-4"></i>
+                            <span class="text-muted">Twitter</span>
+                        </a>
+
+                        <a href="#" class="text-black d-flex align-items-center text-decoration-none gap-3 mb-2">
+                            <i class="bi bi-instagram fs-4"></i>
+                            <span class="text-muted">Instagram</span>
+                        </a>
+
+                        <a href="#" class="text-black d-flex align-items-center text-decoration-none gap-3 mb-2">
+                            <i class="bi bi-linkedin fs-4"></i>
+                            <span class="text-muted">LinkedIn</span>
+                        </a>
+                    </div>
+                </div>
+
+            </div>
+
+            <!-- Paiement -->
+            <div class="d-flex flex-column flex-md-row align-items-center justify-content-center gap-3 mt-5">
+                <h6 class="fw-bold mb-0">
+                    Nos partenaires de paiement
+                </h6>
+
+                <img src="Pharma Ressources/Home-Images/payment.png" alt="Paiements" class="img-fluid">
+            </div>
+
+            <hr class="my-4">
+
+            <!-- Copyright -->
+            <div class="text-secondary">
+                © 2026 Pharma-Shop • Tous droits réservés
+            </div>
+
+        </div>
+    </footer>
+
+    <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.3/dist/js/bootstrap.bundle.min.js"></script>
+
+</body>
+
+</html>

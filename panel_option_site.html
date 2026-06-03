@@ -1,0 +1,195 @@
+<!DOCTYPE html>
+<html lang="fr">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Pharma-Shop - Options du site web</title>
+
+    <!-- Bootstrap -->
+    <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.3/dist/css/bootstrap.min.css" rel="stylesheet">
+
+    <!-- Bootstrap Icons -->
+    <link rel="stylesheet"
+        href="https://cdn.jsdelivr.net/npm/bootstrap-icons@1.11.3/font/bootstrap-icons.min.css">
+
+    <link rel="stylesheet" href="style.css">
+</head>
+
+<body class="bg-light d-flex flex-column min-vh-100">
+
+    <!-- HEADER -->
+    <header class="text-white shadow-sm" style="background-color: #3EB3BD;">
+        <div class="container-fluid py-3">
+
+            <div
+                class="d-flex flex-column flex-lg-row justify-content-between align-items-center text-center text-lg-start gap-2">
+
+                <div class="fw-bold">
+                    Panneau Administrateur > Options du site web
+                </div>
+
+                <div>
+                    Vous êtes connecté en tant que
+                    <span class="fst-italic fw-bold">
+                        Nom du Pharmacien
+                    </span>
+                </div>
+
+            </div>
+
+        </div>
+    </header>
+
+    <!-- CONTENU -->
+    <main class="container flex-grow-1 py-4">
+
+        <div class="card carde border-0 shadow rounded-4 mx-auto">
+
+            <div class="card-body p-3 p-md-4 p-lg-5">
+
+                <h1 class="h2 fw-bold mb-4">
+                    Options du site web
+                </h1>
+
+                <form>
+
+                    <!-- CONTACT -->
+                    <h5 class="fw-bold mb-3">
+                        Modifier les options de contact
+                    </h5>
+
+                    <div class="row g-3 mb-5">
+
+                        <div class="col-12 col-md-6">
+                            <label class="form-label">
+                                N° de téléphone contact
+                            </label>
+
+                            <input type="text" class="form-control">
+                        </div>
+
+                        <div class="col-12 col-md-6">
+                            <label class="form-label">
+                                N° de boîte postale
+                            </label>
+
+                            <input type="text" class="form-control">
+                        </div>
+
+                    </div>
+
+                    <!-- LOCALISATION -->
+                    <h5 class="fw-bold mb-3">
+                        Modifier les options de localisation
+                    </h5>
+
+                    <div class="row g-3 mb-5">
+
+                        <div class="col-12 col-md-6">
+                            <label class="form-label">
+                                Localisation : Pays
+                            </label>
+
+                            <input type="text" class="form-control">
+                        </div>
+
+                        <div class="col-12 col-md-6">
+                            <label class="form-label">
+                                Localisation : Ville
+                            </label>
+
+                            <input type="text" class="form-control">
+                        </div>
+
+                    </div>
+
+                    <!-- DESCRIPTION -->
+                    <h5 class="fw-bold mb-3">
+                        Modifier la description du bas de page
+                    </h5>
+
+                    <div class="mb-5">
+
+                        <textarea class="form-control" rows="5">
+Pharma-Shop est fière d'être la meilleure pharmacie en ligne au Niger avec une gamme de haute qualité.
+                        </textarea>
+
+                    </div>
+
+                    <!-- PUBLICITE -->
+                    <h5 class="fw-bold mb-2">
+                        Modifier l'affiche publicitaire
+                    </h5>
+
+                    <p class="text-muted small fst-italic mb-3">
+                        Cliquez sur l'image pour la modifier
+                    </p>
+
+                    <div class="row g-4 mb-5 align-items-center">
+
+                        <div class="col-12 col-md-auto">
+
+                            <div class="image-preview rounded overflow-hidden border">
+
+                                <img src="Pharma Ressources/Home-Images/pub-1.jpg"
+                                    class="img-fluid w-100 h-100 object-fit-cover"
+                                    alt="Publicité">
+
+                            </div>
+
+                        </div>
+
+                        <div class="col-12 col-md-auto">
+
+                            <div
+                                class="add-slot border border-2 border-secondary rounded d-flex justify-content-center align-items-center">
+
+                                <span class="display-4 text-secondary">
+                                    +
+                                </span>
+
+                            </div>
+
+                        </div>
+
+                    </div>
+
+                    <!-- ACTIONS -->
+                    <div
+                        class="d-flex flex-column flex-sm-row justify-content-end gap-3">
+
+                        <button type="submit"
+                            class="btn text-white px-4" style="background-color: #3EB3BD;">
+                            Valider
+                        </button>
+
+                        <button type="button"
+                            class="btn btn-danger px-4">
+                            Annuler
+                        </button>
+
+                    </div>
+
+                </form>
+
+            </div>
+
+        </div>
+
+    </main>
+
+    <!-- FOOTER -->
+    <footer class="border-top bg-white py-3 mt-auto">
+
+        <div class="container text-center text-muted">
+            Copyright © 2025 Pharma-Shop, tous droits réservés
+        </div>
+
+    </footer>
+
+    <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.3/dist/js/bootstrap.bundle.min.js"></script>
+
+</body>
+
+</html>

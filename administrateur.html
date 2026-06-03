@@ -1,0 +1,192 @@
+<!DOCTYPE html>
+<html lang="fr">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Panneau Administrateur</title>
+
+    <!-- Bootstrap -->
+    <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.3/dist/css/bootstrap.min.css" rel="stylesheet">
+
+    <!-- Bootstrap Icons -->
+    <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/bootstrap-icons@1.11.3/font/bootstrap-icons.min.css">
+    <link rel="stylesheet" href="style.css">
+
+    <style>
+        :root {
+            --primary-color: #43B4BE;
+        }
+
+        body {
+            min-height: 100vh;
+            background-color: #f7f7f7;
+            display: flex;
+            flex-direction: column;
+        }
+
+        .admin-header {
+            background-color: var(--primary-color);
+            color: white;
+            padding: 12px 20px;
+        }
+
+        .welcome-text {
+            margin: 70px 0;
+            text-align: center;
+            font-size: 2rem;
+        }
+
+        .action-btn {
+            background-color: var(--primary-color);
+            color: white;
+            border: none;
+            border-radius: 12px;
+            font-size: 1.8rem;
+            font-weight: 700;
+            padding: 25px;
+            width: 100%;
+            transition: .3s;
+        }
+
+        .action-btn:hover {
+            background-color: #359ea7;
+            color: white;
+        }
+
+        .description-box {
+            border: 1px solid #444;
+            border-radius: 8px;
+            padding: 15px;
+            background: white;
+            font-size: 1.1rem;
+            height: 100%;
+        }
+
+        footer {
+            margin-top: auto;
+            border-top: 1px solid #bdbdbd;
+            padding: 15px 40px;
+            background: #f7f7f7;
+        }
+
+        @media (max-width: 768px) {
+            .welcome-text {
+                font-size: 1.4rem;
+                margin: 40px 0;
+                padding: 0 15px;
+            }
+
+            .action-btn {
+                font-size: 1.2rem;
+                padding: 20px;
+            }
+
+            .description-box {
+                margin-top: 15px;
+            }
+        }
+    </style>
+</head>
+
+<body>
+
+    <!-- HEADER -->
+    <div class="admin-header">
+        <div class="container-fluid">
+            <div class="row align-items-center">
+
+                <div class="col-md-6 fw-bold fs-2">
+                    Panneau Administrateur
+                </div>
+
+                <div class="col-md-6 text-md-end mt-2 mt-md-0 fs-4">
+                    Vous êtes connectés en tant que,
+                    <strong><em>Nom du Pharmacien</em></strong>
+                </div>
+
+            </div>
+        </div>
+    </div>
+
+    <!-- CONTENU -->
+    <main class="container">
+
+        <h1 class="welcome-text">
+            Bienvenue sur le panneau administrateur,
+            choisissez une action pour procéder
+        </h1>
+
+        <div class="container mt-5">
+
+            <!-- OPTION 1 -->
+            <div class="row justify-content-center align-items-center mb-5">
+
+                <div class="col-12 col-md-8 col-lg-5">
+                    <div class="custom-tooltip-container text-center">
+
+                        <a href="panel_option_site.html" class="btn text-white fw-bold fs-4 py-4 w-100" style="background-color:#3EB3BD;">
+                            Modifier les options du site web
+                        </a>
+
+                        <div class="custom-tooltip">
+                            En choisissant cette option vous pourrez modifier la publicité,
+                            les contacts et autres options du site web.
+                        </div>
+
+                    </div>
+                </div>
+
+            </div>
+
+            <!-- OPTION 2 -->
+            <div class="row justify-content-center align-items-center mb-5">
+
+                <div class="col-12 col-md-8 col-lg-5">
+                    <div class="custom-tooltip-container2 text-center">
+
+                        <a href="panel_option.html" class="btn text-white fw-bold fs-4 py-4 w-100" style="background-color:#3EB3BD;">
+                            Modifiez les produits
+                        </a>
+
+                        <div class="custom-tooltip2">
+                            En choisissant cette option vous pourrez modifier les produits
+                            et mettre à jour les stocks.
+                        </div>
+
+                    </div>
+                </div>
+
+            </div>
+
+            <!-- OPTION 3 -->
+            <div class="row justify-content-center align-items-center mb-5">
+
+                <div class="col-12 col-md-8 col-lg-5">
+                    <div class="custom-tooltip-container3 text-center">
+
+                        <button class="btn text-white fw-bold fs-4 py-4 w-100" style="background-color:#3EB3BD;">
+                            Modifiez les blogs
+                        </button>
+
+                        <div class="custom-tooltip3">
+                            En choisissant cette option vous pourrez modifier les blogs.
+                        </div>
+
+                    </div>
+                </div>
+
+            </div>
+
+        </div>
+    </main>
+
+    <!-- FOOTER -->
+    <footer>
+        Copyright © 2025 Pharma-Shop, tout droits réservés
+    </footer>
+
+    <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.3/dist/js/bootstrap.bundle.min.js"></script>
+</body>
+
+</html>
