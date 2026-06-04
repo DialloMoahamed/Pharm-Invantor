@@ -16,225 +16,318 @@
 
 <body>
 
-    <!-- TOP BAR -->
-    <div class="top-bar text-white p-2" style="background-color: #3EB3BD;">
-        <div class="container-fluid d-flex justify-content-between align-items-center">
+    <div class="d-none d-lg-block">
+        <!-- TOP BAR -->
+        <div class="top-bar text-white p-2" style="background-color: #3EB3BD;">
+            <div class="container-fluid d-flex justify-content-between align-items-center">
 
-            <span>
-                Livraison gratuite pour toute commande de plus de 10.000fcfa
-            </span>
+                <span>
+                    Livraison gratuite pour toute commande de plus de 10.000fcfa
+                </span>
 
-            <div class="d-flex gap-4">
-                <i class="bi bi-facebook fs-5"></i>
-                <i class="bi bi-twitter-x fs-5"></i>
-                <i class="bi bi-instagram fs-5"></i>
-                <i class="bi bi-google fs-5"></i>
+                <div class="d-flex gap-4">
+                    <i class="bi bi-facebook fs-5"></i>
+                    <i class="bi bi-twitter-x fs-5"></i>
+                    <i class="bi bi-instagram fs-5"></i>
+                    <i class="bi bi-google fs-5"></i>
+                </div>
+
+            </div>
+        </div>
+
+        <!-- HEADER -->
+        <div class="container-fluid py-4">
+
+            <div class="d-flex align-items-center justify-content-between flex-wrap header-wrapper">
+
+                <!-- LOGO -->
+                <div class="logo">
+                    <img src="Pharma Ressources/Home-Images/Brand-Logo.png" alt="Pharma-Shop Logo" class="img-fluid"
+                        style="width: 340px;">
+                </div>
+
+                <!-- SEARCH + NAV -->
+                <div class="search-wrapper">
+
+                    <!-- SEARCH -->
+                    <div class="input-group search-box rounded-5 mb-3">
+                        <input type="text" class="form-control p-2" placeholder="Rechercher...">
+
+                        <button class="btn text-white border-0" style="background-color: #3EB3BD;" type="button">
+
+                            <i class="bi bi-search"></i>
+
+                        </button>
+                    </div>
+
+                    <!-- NAVBAR -->
+                    <nav class="navbar navbar-expand-lg">
+
+                        <div class="container-fluid p-0">
+
+                            <button class="navbar-toggler" type="button" data-bs-toggle="collapse"
+                                data-bs-target="#navMenu">
+
+                                <span class="navbar-toggler-icon"></span>
+
+                            </button>
+
+                            <div class="collapse navbar-collapse" id="navMenu">
+
+                                <ul class="navbar-nav mx-auto">
+
+                                    <li class="nav-item">
+                                        <a class="nav-link" href="#">Home +</a>
+                                    </li>
+
+                                    <li class="nav-item">
+                                        <a class="nav-link" href="Shop.html">Shop +</a>
+                                    </li>
+
+                                    <li class="nav-item">
+                                        <a class="nav-link" href="#">Blogs +</a>
+                                    </li>
+
+                                    <li class="nav-item">
+                                        <a class="nav-link" href="#">Page +</a>
+                                    </li>
+
+                                    <li class="nav-item">
+                                        <a class="nav-link" href="#">On Sale +</a>
+                                    </li>
+
+                                    <li class="nav-item">
+                                        <a class="nav-link" href="#">Contact +</a>
+                                    </li>
+
+                                </ul>
+
+                            </div>
+
+                        </div>
+
+                    </nav>
+
+                </div>
+
+                <!-- ACCOUNT -->
+                <div class="d-flex align-items-center gap-3 account-section">
+
+                    <a href="administrateur.html" class="text-dark text-decoration-none">
+                        SIGN IN
+                    </a>
+
+                    <a href="administrateur.html" class="text-dark text-decoration-none">
+                        / SIGN UP
+                    </a>
+
+                    <i class="bi bi-heart fs-4"></i>
+
+                    <div class="d-flex align-items-center gap-2">
+                        <i class="bi bi-bag fs-4"></i>
+                        <span>0 fcfa</span>
+                    </div>
+
+                </div>
+
+            </div>
+
+            <!-- CATEGORIES -->
+            <div class="container-fluid mt-4">
+
+                <div class="row g-3 justify-content-center">
+
+                    <!-- CARD 1 -->
+                    <div class="col-12 col-sm-6 col-lg-2">
+
+                        <div class="d-flex align-items-center justify-content-center category-card">
+
+                            <div class="icon-circle me-3 text-white fs-3" style="background-color: #3EB3BD;">
+
+                                <i class="bi bi-capsule-pill"></i>
+
+                            </div>
+
+                            <div class="category-content lh-1">
+                                <h6 class="fw-bold">Medicament</h6>
+                                <small>Plus de 2000 produits</small>
+                            </div>
+
+                        </div>
+
+                    </div>
+
+                    <!-- CARD 2 -->
+                    <div class="col-12 col-sm-6 col-lg-2">
+
+                        <div class="d-flex align-items-center justify-content-center category-card category-border">
+
+                            <div class="icon-circle me-3 text-white fs-3" style="background-color: #F667AB;">
+
+                                <i class="bi bi-droplet"></i>
+
+                            </div>
+
+                            <div class="category-content lh-1">
+                                <h6 class="fw-bold">Soins</h6>
+                                <small>Plus de 2000 produits</small>
+                            </div>
+
+                        </div>
+
+                    </div>
+
+                    <!-- CARD 3 -->
+                    <div class="col-12 col-sm-6 col-lg-2">
+
+                        <div class="d-flex align-items-center justify-content-center category-card category-border">
+
+                            <div class="icon-circle me-3 text-white fs-3" style="background-color: #83C946;">
+
+                                <i class="bi bi-journal-medical"></i>
+
+                            </div>
+
+                            <div class="category-content lh-1">
+                                <h6 class="fw-bold">Diagnostique</h6>
+                                <small>Livret de test & check up</small>
+                            </div>
+
+                        </div>
+
+                    </div>
+
+                    <!-- CARD 4 -->
+                    <div class="col-12 col-sm-6 col-lg-2">
+
+                        <div class="d-flex align-items-center justify-content-center category-card category-border">
+
+                            <div class="icon-circle me-3 text-white fs-3" style="background-color: #3EB3BD;">
+
+                                <i class="bi bi-heart-pulse"></i>
+
+                            </div>
+
+                            <div class="category-content lh-1">
+                                <h6 class="fw-bold">Coin santé</h6>
+                                <small>Dernière tendances des experts</small>
+                            </div>
+
+                        </div>
+
+                    </div>
+
+                    <!-- CARD 5 -->
+                    <div class="col-12 col-sm-6 col-lg-2">
+
+                        <div class="d-flex align-items-center justify-content-center category-card">
+
+                            <div class="icon-circle me-3 text-white fs-3" style="background-color: #FFB61C;">
+
+                                <i class="bi bi-hospital"></i>
+
+                            </div>
+
+                            <div class="category-content lh-1">
+                                <h6 class="fw-bold">Autres</h6>
+                                <small>Plus d'info</small>
+                            </div>
+
+                        </div>
+
+                    </div>
+
+                </div>
+
             </div>
 
         </div>
     </div>
 
-    <!-- HEADER -->
-    <div class="container-fluid py-4">
-
-        <div class="d-flex align-items-center justify-content-between flex-wrap header-wrapper">
-
-            <!-- LOGO -->
-            <div class="logo">
-                <img src="Pharma Ressources/Home-Images/Brand-Logo.png" alt="Pharma-Shop Logo" class="img-fluid"
-                    style="width: 340px;">
-            </div>
-
-            <!-- SEARCH + NAV -->
-            <div class="search-wrapper">
-
-                <!-- SEARCH -->
-                <div class="input-group search-box rounded-5 mb-3">
-                    <input type="text" class="form-control p-2" placeholder="Rechercher...">
-
-                    <button class="btn text-white border-0" style="background-color: #3EB3BD;" type="button">
-
-                        <i class="bi bi-search"></i>
-
-                    </button>
-                </div>
-
-                <!-- NAVBAR -->
-                <nav class="navbar navbar-expand-lg">
-
-                    <div class="container-fluid p-0">
-
-                        <button class="navbar-toggler" type="button" data-bs-toggle="collapse"
-                            data-bs-target="#navMenu">
-
-                            <span class="navbar-toggler-icon"></span>
-
-                        </button>
-
-                        <div class="collapse navbar-collapse" id="navMenu">
-
-                            <ul class="navbar-nav mx-auto">
-
-                                <li class="nav-item">
-                                    <a class="nav-link" href="#">Home +</a>
-                                </li>
-
-                                <li class="nav-item">
-                                    <a class="nav-link" href="Shop.html">Shop +</a>
-                                </li>
-
-                                <li class="nav-item">
-                                    <a class="nav-link" href="#">Blogs +</a>
-                                </li>
-
-                                <li class="nav-item">
-                                    <a class="nav-link" href="#">Page +</a>
-                                </li>
-
-                                <li class="nav-item">
-                                    <a class="nav-link" href="#">On Sale +</a>
-                                </li>
-
-                                <li class="nav-item">
-                                    <a class="nav-link" href="#">Contact +</a>
-                                </li>
-
-                            </ul>
-
-                        </div>
-
-                    </div>
-
-                </nav>
-
-            </div>
-
-            <!-- ACCOUNT -->
-            <div class="d-flex align-items-center gap-3 account-section">
-
-                <a href="administrateur.html" class="text-dark text-decoration-none">
-                    SIGN IN
-                </a>
-
-                <a href="administrateur.html" class="text-dark text-decoration-none">
-                    / SIGN UP
-                </a>
-
-                <i class="bi bi-heart fs-4"></i>
-
-                <div class="d-flex align-items-center gap-2">
-                    <i class="bi bi-bag fs-4"></i>
-                    <span>0 fcfa</span>
-                </div>
-
-            </div>
-
+    <div class="d-block d-lg-none">
+        <!-- TOP BAR -->
+        <div class="text-white text-center py-2 small" style="background-color:#3EB3BD;">
+            Livraison gratuite dès 10.000 FCFA
         </div>
 
-        <!-- CATEGORIES -->
-        <div class="container-fluid mt-4">
+        <!-- HEADER -->
+        <nav class="navbar navbar-light bg-white shadow-sm">
 
-            <div class="row g-3 justify-content-center">
+            <div class="container-fluid">
 
-                <!-- CARD 1 -->
-                <div class="col-12 col-sm-6 col-lg-2">
+                <a class="navbar-brand" href="#">
+                    <img src="Pharma Ressources/Home-Images/Brand-Logo.png" alt="Logo" height="40">
+                </a>
 
-                    <div class="d-flex align-items-center justify-content-center category-card">
+                <div class="d-flex align-items-center gap-3">
 
-                        <div class="icon-circle me-3 text-white fs-3" style="background-color: #3EB3BD;">
+                    <i class="bi bi-search fs-5"></i>
 
-                            <i class="bi bi-capsule-pill"></i>
+                    <i class="bi bi-heart fs-5"></i>
 
-                        </div>
+                    <i class="bi bi-bag fs-5"></i>
 
-                        <div class="category-content lh-1">
-                            <h6 class="fw-bold">Medicament</h6>
-                            <small>Plus de 2000 produits</small>
-                        </div>
+                    <button class="navbar-toggler border-0" type="button" data-bs-toggle="offcanvas"
+                        data-bs-target="#mobileMenu">
 
-                    </div>
+                        <span class="navbar-toggler-icon"></span>
 
-                </div>
-
-                <!-- CARD 2 -->
-                <div class="col-12 col-sm-6 col-lg-2">
-
-                    <div class="d-flex align-items-center justify-content-center category-card category-border">
-
-                        <div class="icon-circle me-3 text-white fs-3" style="background-color: #F667AB;">
-
-                            <i class="bi bi-droplet"></i>
-
-                        </div>
-
-                        <div class="category-content lh-1">
-                            <h6 class="fw-bold">Soins</h6>
-                            <small>Plus de 2000 produits</small>
-                        </div>
-
-                    </div>
+                    </button>
 
                 </div>
 
-                <!-- CARD 3 -->
-                <div class="col-12 col-sm-6 col-lg-2">
+            </div>
 
-                    <div class="d-flex align-items-center justify-content-center category-card category-border">
+        </nav>
 
-                        <div class="icon-circle me-3 text-white fs-3" style="background-color: #83C946;">
+        <div class="offcanvas offcanvas-end" tabindex="-1" id="mobileMenu">
 
-                            <i class="bi bi-journal-medical"></i>
+            <div class="offcanvas-header">
 
-                        </div>
+                <h5 class="offcanvas-title">Menu</h5>
 
-                        <div class="category-content lh-1">
-                            <h6 class="fw-bold">Diagnostique</h6>
-                            <small>Livret de test & check up</small>
-                        </div>
+                <button type="button" class="btn-close" data-bs-dismiss="offcanvas">
+                </button>
 
-                    </div>
+            </div>
 
-                </div>
+            <div class="offcanvas-body">
 
-                <!-- CARD 4 -->
-                <div class="col-12 col-sm-6 col-lg-2">
+                <ul class="navbar-nav">
 
-                    <div class="d-flex align-items-center justify-content-center category-card category-border">
+                    <li class="nav-item">
+                        <a class="nav-link" href="#">Home</a>
+                    </li>
 
-                        <div class="icon-circle me-3 text-white fs-3" style="background-color: #3EB3BD;">
+                    <li class="nav-item">
+                        <a class="nav-link" href="Shop.html">Shop</a>
+                    </li>
 
-                            <i class="bi bi-heart-pulse"></i>
+                    <li class="nav-item">
+                        <a class="nav-link" href="#">Blogs</a>
+                    </li>
 
-                        </div>
+                    <li class="nav-item">
+                        <a class="nav-link" href="#">Page</a>
+                    </li>
 
-                        <div class="category-content lh-1">
-                            <h6 class="fw-bold">Coin santé</h6>
-                            <small>Dernière tendances des experts</small>
-                        </div>
+                    <li class="nav-item">
+                        <a class="nav-link" href="#">On Sale</a>
+                    </li>
 
-                    </div>
+                    <li class="nav-item">
+                        <a class="nav-link" href="#">Contact</a>
+                    </li>
 
-                </div>
+                    <hr>
 
-                <!-- CARD 5 -->
-                <div class="col-12 col-sm-6 col-lg-2">
+                    <li class="nav-item">
+                        <a class="nav-link" href="administrateur.html">
+                            Sign In / Sign Up
+                        </a>
+                    </li>
 
-                    <div class="d-flex align-items-center justify-content-center category-card">
-
-                        <div class="icon-circle me-3 text-white fs-3" style="background-color: #FFB61C;">
-
-                            <i class="bi bi-hospital"></i>
-
-                        </div>
-
-                        <div class="category-content lh-1">
-                            <h6 class="fw-bold">Autres</h6>
-                            <small>Plus d'info</small>
-                        </div>
-
-                    </div>
-
-                </div>
+                </ul>
 
             </div>
 
@@ -297,7 +390,7 @@
                                 Acheter Maintenant</a>
                         </div>
                     </div>
-                    <div class="col-sm-4 d-flex flex-column gap-4">
+                    <div class="col-sm-4 mb-3 d-flex flex-column gap-4">
 
                         <!-- CARD HAUT -->
                         <div class="card border-0 text-white p-3 imaged">
@@ -944,176 +1037,172 @@
     </main>
 
 
-<footer class="mt-5">
-
-    <hr class="my-4">
-
-    <div class="container-fluid py-5">
-
-        <div class="row g-4">
-
-            <!-- Logo -->
-            <div class="col-lg-4 col-md-6 border-end">
-                <a href="#" class="d-flex align-items-center text-decoration-none mb-3">
-                    <img src="Pharma Ressources/Home-Images/Logo.svg"
-                        alt="Pharma-Shop"
-                        class="img-fluid"
-                        style="max-width: 50px;">
-
-                    <span class="ms-2 fs-4 fw-bold text-dark">
-                        Pharma-Shop
-                    </span>
-                </a>
-
-                <p class="text-secondary lh-lg">
-                    Pharma-Shop est votre pharmacie en ligne de confiance au Niger.
-                    Nous proposons une large gamme de produits pharmaceutiques
-                    et parapharmaceutiques de qualité.
-                </p>
-            </div>
-
-            <!-- Informations -->
-            <div class="col-lg-2 col-md-6 col-6">
-                <h6 class="fw-bold mb-3">INFORMATIONS</h6>
-
-                <ul class="list-unstyled m-0">
-                    <li class="mb-2">
-                        <a href="#" class="text-decoration-none text-secondary">
-                            Dernières nouvelles
-                        </a>
-                    </li>
-
-                    <li class="mb-2">
-                        <a href="#" class="text-decoration-none text-secondary">
-                            Nos pharmacies
-                        </a>
-                    </li>
-
-                    <li class="mb-2">
-                        <a href="#" class="text-decoration-none text-secondary">
-                            Programme d'affiliation
-                        </a>
-                    </li>
-
-                    <li class="mb-2">
-                        <a href="#" class="text-decoration-none text-secondary">
-                            Carrières
-                        </a>
-                    </li>
-                </ul>
-            </div>
-
-            <!-- Catégories -->
-            <div class="col-lg-2 col-md-6 col-6">
-                <h6 class="fw-bold mb-3">CATÉGORIES</h6>
-
-                <ul class="list-unstyled m-0">
-                    <li class="mb-2">
-                        <a href="#" class="text-decoration-none text-secondary">
-                            Médicaments
-                        </a>
-                    </li>
-
-                    <li class="mb-2">
-                        <a href="#" class="text-decoration-none text-secondary">
-                            Beauté & Soins
-                        </a>
-                    </li>
-
-                    <li class="mb-2">
-                        <a href="#" class="text-decoration-none text-secondary">
-                            Bébé & Maman
-                        </a>
-                    </li>
-
-                    <li class="mb-2">
-                        <a href="#" class="text-decoration-none text-secondary">
-                            Hygiène
-                        </a>
-                    </li>
-                </ul>
-            </div>
-
-            <!-- Services -->
-            <div class="col-lg-2 col-md-6 col-6 border-end">
-                <h6 class="fw-bold mb-3">SERVICES</h6>
-
-                <ul class="list-unstyled m-0">
-                    <li class="mb-2">
-                        <a href="#" class="text-decoration-none text-secondary">
-                            Livraison
-                        </a>
-                    </li>
-
-                    <li class="mb-2">
-                        <a href="#" class="text-decoration-none text-secondary">
-                            Retours
-                        </a>
-                    </li>
-
-                    <li class="mb-2">
-                        <a href="#" class="text-decoration-none text-secondary">
-                            Contact
-                        </a>
-                    </li>
-
-                    <li class="mb-2">
-                        <a href="#" class="text-decoration-none text-secondary">
-                            FAQ
-                        </a>
-                    </li>
-                </ul>
-            </div>
-
-            <!-- Réseaux -->
-            <div class="col-lg-2 col-md-6 col-6">
-                <h6 class="fw-bold mb-3">SUIVEZ-NOUS</h6>
-
-                <div class="d-flex flex-column">
-                    <a href="#" class="text-black d-flex align-items-center text-decoration-none gap-3 mb-2">
-                        <i class="bi bi-facebook fs-4"></i>
-                        <span class="text-muted">Facebook</span>
-                    </a>
-
-                    <a href="#" class="text-black d-flex align-items-center text-decoration-none gap-3 mb-2">
-                        <i class="bi bi-twitter-x fs-4"></i>
-                        <span class="text-muted">Twitter</span>
-                    </a>
-
-                    <a href="#" class="text-black d-flex align-items-center text-decoration-none gap-3 mb-2">
-                        <i class="bi bi-instagram fs-4"></i>
-                        <span class="text-muted">Instagram</span>
-                    </a>
-
-                    <a href="#" class="text-black d-flex align-items-center text-decoration-none gap-3 mb-2">
-                        <i class="bi bi-linkedin fs-4"></i>
-                        <span class="text-muted">LinkedIn</span>
-                    </a>
-                </div>
-            </div>
-
-        </div>
-
-        <!-- Paiement -->
-        <div class="d-flex flex-column flex-md-row align-items-center justify-content-center gap-3 mt-5">
-            <h6 class="fw-bold mb-0">
-                Nos partenaires de paiement
-            </h6>
-
-            <img src="Pharma Ressources/Home-Images/payment.png"
-                alt="Paiements"
-                class="img-fluid">
-        </div>
+    <footer class="mt-5">
 
         <hr class="my-4">
 
-        <!-- Copyright -->
-        <div class="text-secondary">
-            © 2026 Pharma-Shop • Tous droits réservés
-        </div>
+        <div class="container-fluid py-5">
 
-    </div>
-</footer>
+            <div class="row g-4">
+
+                <!-- Logo -->
+                <div class="col-lg-4 col-md-6 border-end">
+                    <a href="#" class="d-flex align-items-center text-decoration-none mb-3">
+                        <img src="Pharma Ressources/Home-Images/Logo.svg" alt="Pharma-Shop" class="img-fluid"
+                            style="max-width: 50px;">
+
+                        <span class="ms-2 fs-4 fw-bold text-dark">
+                            Pharma-Shop
+                        </span>
+                    </a>
+
+                    <p class="text-secondary lh-lg">
+                        Pharma-Shop est votre pharmacie en ligne de confiance au Niger.
+                        Nous proposons une large gamme de produits pharmaceutiques
+                        et parapharmaceutiques de qualité.
+                    </p>
+                </div>
+
+                <!-- Informations -->
+                <div class="col-lg-2 col-md-6 col-6">
+                    <h6 class="fw-bold mb-3">INFORMATIONS</h6>
+
+                    <ul class="list-unstyled m-0">
+                        <li class="mb-2">
+                            <a href="#" class="text-decoration-none text-secondary">
+                                Dernières nouvelles
+                            </a>
+                        </li>
+
+                        <li class="mb-2">
+                            <a href="#" class="text-decoration-none text-secondary">
+                                Nos pharmacies
+                            </a>
+                        </li>
+
+                        <li class="mb-2">
+                            <a href="#" class="text-decoration-none text-secondary">
+                                Programme d'affiliation
+                            </a>
+                        </li>
+
+                        <li class="mb-2">
+                            <a href="#" class="text-decoration-none text-secondary">
+                                Carrières
+                            </a>
+                        </li>
+                    </ul>
+                </div>
+
+                <!-- Catégories -->
+                <div class="col-lg-2 col-md-6 col-6">
+                    <h6 class="fw-bold mb-3">CATÉGORIES</h6>
+
+                    <ul class="list-unstyled m-0">
+                        <li class="mb-2">
+                            <a href="#" class="text-decoration-none text-secondary">
+                                Médicaments
+                            </a>
+                        </li>
+
+                        <li class="mb-2">
+                            <a href="#" class="text-decoration-none text-secondary">
+                                Beauté & Soins
+                            </a>
+                        </li>
+
+                        <li class="mb-2">
+                            <a href="#" class="text-decoration-none text-secondary">
+                                Bébé & Maman
+                            </a>
+                        </li>
+
+                        <li class="mb-2">
+                            <a href="#" class="text-decoration-none text-secondary">
+                                Hygiène
+                            </a>
+                        </li>
+                    </ul>
+                </div>
+
+                <!-- Services -->
+                <div class="col-lg-2 col-md-6 col-6 border-end">
+                    <h6 class="fw-bold mb-3">SERVICES</h6>
+
+                    <ul class="list-unstyled m-0">
+                        <li class="mb-2">
+                            <a href="#" class="text-decoration-none text-secondary">
+                                Livraison
+                            </a>
+                        </li>
+
+                        <li class="mb-2">
+                            <a href="#" class="text-decoration-none text-secondary">
+                                Retours
+                            </a>
+                        </li>
+
+                        <li class="mb-2">
+                            <a href="#" class="text-decoration-none text-secondary">
+                                Contact
+                            </a>
+                        </li>
+
+                        <li class="mb-2">
+                            <a href="#" class="text-decoration-none text-secondary">
+                                FAQ
+                            </a>
+                        </li>
+                    </ul>
+                </div>
+
+                <!-- Réseaux -->
+                <div class="col-lg-2 col-md-6 col-6">
+                    <h6 class="fw-bold mb-3">SUIVEZ-NOUS</h6>
+
+                    <div class="d-flex flex-column">
+                        <a href="#" class="text-black d-flex align-items-center text-decoration-none gap-3 mb-2">
+                            <i class="bi bi-facebook fs-4"></i>
+                            <span class="text-muted">Facebook</span>
+                        </a>
+
+                        <a href="#" class="text-black d-flex align-items-center text-decoration-none gap-3 mb-2">
+                            <i class="bi bi-twitter-x fs-4"></i>
+                            <span class="text-muted">Twitter</span>
+                        </a>
+
+                        <a href="#" class="text-black d-flex align-items-center text-decoration-none gap-3 mb-2">
+                            <i class="bi bi-instagram fs-4"></i>
+                            <span class="text-muted">Instagram</span>
+                        </a>
+
+                        <a href="#" class="text-black d-flex align-items-center text-decoration-none gap-3 mb-2">
+                            <i class="bi bi-linkedin fs-4"></i>
+                            <span class="text-muted">LinkedIn</span>
+                        </a>
+                    </div>
+                </div>
+
+            </div>
+
+            <!-- Paiement -->
+            <div class="d-flex flex-column flex-md-row align-items-center justify-content-center gap-3 mt-5">
+                <h6 class="fw-bold mb-0">
+                    Nos partenaires de paiement
+                </h6>
+
+                <img src="Pharma Ressources/Home-Images/payment.png" alt="Paiements" class="img-fluid">
+            </div>
+
+            <hr class="my-4">
+
+            <!-- Copyright -->
+            <div class="text-secondary">
+                © 2026 Pharma-Shop • Tous droits réservés
+            </div>
+
+        </div>
+    </footer>
 
     <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.3/dist/js/bootstrap.bundle.min.js"></script>
 

@@ -16,120 +16,323 @@
 
 <body>
 
-    <!-- TOP BAR -->
-    <div class="top-bar text-white p-2" style="background-color: #3EB3BD;">
-        <div class="container-fluid d-flex justify-content-between align-items-center">
+     <div class="d-none d-lg-block">
+        <!-- TOP BAR -->
+        <div class="top-bar text-white p-2" style="background-color: #3EB3BD;">
+            <div class="container-fluid d-flex justify-content-between align-items-center">
 
-            <span>
-                Livraison gratuite pour toute commande de plus de 10.000fcfa
-            </span>
+                <span>
+                    Livraison gratuite pour toute commande de plus de 10.000fcfa
+                </span>
 
-            <div class="d-flex gap-4">
-                <i class="bi bi-facebook fs-5"></i>
-                <i class="bi bi-twitter-x fs-5"></i>
-                <i class="bi bi-instagram fs-5"></i>
-                <i class="bi bi-google fs-5"></i>
-            </div>
-
-        </div>
-    </div>
-
-    <!-- HEADER -->
-    <div class="container-fluid py-4">
-
-        <div class="d-flex align-items-center justify-content-between flex-wrap header-wrapper">
-
-            <!-- LOGO -->
-            <div class="logo">
-                <img src="Pharma Ressources/Home-Images/Brand-Logo.png" alt="Pharma-Shop Logo" class="img-fluid"
-                    style="width: 340px;">
-            </div>
-
-            <!-- SEARCH + NAV -->
-            <div class="search-wrapper">
-
-                <!-- SEARCH -->
-                <div class="input-group search-box rounded-5 mb-3">
-                    <input type="text" class="form-control p-2" placeholder="Rechercher...">
-
-                    <button class="btn text-white border-0" style="background-color: #3EB3BD;" type="button">
-
-                        <i class="bi bi-search"></i>
-
-                    </button>
+                <div class="d-flex gap-4">
+                    <i class="bi bi-facebook fs-5"></i>
+                    <i class="bi bi-twitter-x fs-5"></i>
+                    <i class="bi bi-instagram fs-5"></i>
+                    <i class="bi bi-google fs-5"></i>
                 </div>
 
-                <!-- NAVBAR -->
-                <nav class="navbar navbar-expand-lg">
+            </div>
+        </div>
 
-                    <div class="container-fluid p-0">
+        <!-- HEADER -->
+        <div class="container-fluid py-4">
 
-                        <button class="navbar-toggler" type="button" data-bs-toggle="collapse"
-                            data-bs-target="#navMenu">
+            <div class="d-flex align-items-center justify-content-between flex-wrap header-wrapper">
 
-                            <span class="navbar-toggler-icon"></span>
+                <!-- LOGO -->
+                <div class="logo">
+                    <img src="Pharma Ressources/Home-Images/Brand-Logo.png" alt="Pharma-Shop Logo" class="img-fluid"
+                        style="width: 340px;">
+                </div>
+
+                <!-- SEARCH + NAV -->
+                <div class="search-wrapper">
+
+                    <!-- SEARCH -->
+                    <div class="input-group search-box rounded-5 mb-3">
+                        <input type="text" class="form-control p-2" placeholder="Rechercher...">
+
+                        <button class="btn text-white border-0" style="background-color: #3EB3BD;" type="button">
+
+                            <i class="bi bi-search"></i>
 
                         </button>
+                    </div>
 
-                        <div class="collapse navbar-collapse" id="navMenu">
+                    <!-- NAVBAR -->
+                    <nav class="navbar navbar-expand-lg">
 
-                            <ul class="navbar-nav mx-auto">
+                        <div class="container-fluid p-0">
 
-                                <li class="nav-item">
-                                    <a class="nav-link" href="#">Home +</a>
-                                </li>
+                            <button class="navbar-toggler" type="button" data-bs-toggle="collapse"
+                                data-bs-target="#navMenu">
 
-                                <li class="nav-item">
-                                    <a class="nav-link" href="Shop.html">Shop +</a>
-                                </li>
+                                <span class="navbar-toggler-icon"></span>
 
-                                <li class="nav-item">
-                                    <a class="nav-link" href="#">Blogs +</a>
-                                </li>
+                            </button>
 
-                                <li class="nav-item">
-                                    <a class="nav-link" href="#">Page +</a>
-                                </li>
+                            <div class="collapse navbar-collapse" id="navMenu">
 
-                                <li class="nav-item">
-                                    <a class="nav-link" href="#">On Sale +</a>
-                                </li>
+                                <ul class="navbar-nav mx-auto">
 
-                                <li class="nav-item">
-                                    <a class="nav-link" href="#">Contact +</a>
-                                </li>
+                                    <li class="nav-item">
+                                        <a class="nav-link" href="#">Home +</a>
+                                    </li>
 
-                            </ul>
+                                    <li class="nav-item">
+                                        <a class="nav-link" href="Shop.html">Shop +</a>
+                                    </li>
+
+                                    <li class="nav-item">
+                                        <a class="nav-link" href="#">Blogs +</a>
+                                    </li>
+
+                                    <li class="nav-item">
+                                        <a class="nav-link" href="#">Page +</a>
+                                    </li>
+
+                                    <li class="nav-item">
+                                        <a class="nav-link" href="#">On Sale +</a>
+                                    </li>
+
+                                    <li class="nav-item">
+                                        <a class="nav-link" href="#">Contact +</a>
+                                    </li>
+
+                                </ul>
+
+                            </div>
+
+                        </div>
+
+                    </nav>
+
+                </div>
+
+                <!-- ACCOUNT -->
+                <div class="d-flex align-items-center gap-3 account-section">
+
+                    <a href="administrateur.html" class="text-dark text-decoration-none">
+                        SIGN IN
+                    </a>
+
+                    <a href="administrateur.html" class="text-dark text-decoration-none">
+                        / SIGN UP
+                    </a>
+
+                    <i class="bi bi-heart fs-4"></i>
+
+                    <div class="d-flex align-items-center gap-2">
+                        <i class="bi bi-bag fs-4"></i>
+                        <span>0 fcfa</span>
+                    </div>
+
+                </div>
+
+            </div>
+
+            <!-- CATEGORIES -->
+            <div class="container-fluid mt-4">
+
+                <div class="row g-3 justify-content-center">
+
+                    <!-- CARD 1 -->
+                    <div class="col-12 col-sm-6 col-lg-2">
+
+                        <div class="d-flex align-items-center justify-content-center category-card">
+
+                            <div class="icon-circle me-3 text-white fs-3" style="background-color: #3EB3BD;">
+
+                                <i class="bi bi-capsule-pill"></i>
+
+                            </div>
+
+                            <div class="category-content lh-1">
+                                <h6 class="fw-bold">Medicament</h6>
+                                <small>Plus de 2000 produits</small>
+                            </div>
 
                         </div>
 
                     </div>
 
-                </nav>
+                    <!-- CARD 2 -->
+                    <div class="col-12 col-sm-6 col-lg-2">
 
-            </div>
+                        <div class="d-flex align-items-center justify-content-center category-card category-border">
 
-            <!-- ACCOUNT -->
-            <div class="d-flex align-items-center gap-3 account-section">
+                            <div class="icon-circle me-3 text-white fs-3" style="background-color: #F667AB;">
 
-                <a href="administrateur.html" class="text-dark text-decoration-none">
-                    SIGN IN
-                </a>
+                                <i class="bi bi-droplet"></i>
 
-                <a href="administrateur.html" class="text-dark text-decoration-none">
-                    / SIGN UP
-                </a>
+                            </div>
 
-                <i class="bi bi-heart fs-4"></i>
+                            <div class="category-content lh-1">
+                                <h6 class="fw-bold">Soins</h6>
+                                <small>Plus de 2000 produits</small>
+                            </div>
 
-                <div class="d-flex align-items-center gap-2">
-                    <i class="bi bi-bag fs-4"></i>
-                    <span>0 fcfa</span>
+                        </div>
+
+                    </div>
+
+                    <!-- CARD 3 -->
+                    <div class="col-12 col-sm-6 col-lg-2">
+
+                        <div class="d-flex align-items-center justify-content-center category-card category-border">
+
+                            <div class="icon-circle me-3 text-white fs-3" style="background-color: #83C946;">
+
+                                <i class="bi bi-journal-medical"></i>
+
+                            </div>
+
+                            <div class="category-content lh-1">
+                                <h6 class="fw-bold">Diagnostique</h6>
+                                <small>Livret de test & check up</small>
+                            </div>
+
+                        </div>
+
+                    </div>
+
+                    <!-- CARD 4 -->
+                    <div class="col-12 col-sm-6 col-lg-2">
+
+                        <div class="d-flex align-items-center justify-content-center category-card category-border">
+
+                            <div class="icon-circle me-3 text-white fs-3" style="background-color: #3EB3BD;">
+
+                                <i class="bi bi-heart-pulse"></i>
+
+                            </div>
+
+                            <div class="category-content lh-1">
+                                <h6 class="fw-bold">Coin santé</h6>
+                                <small>Dernière tendances des experts</small>
+                            </div>
+
+                        </div>
+
+                    </div>
+
+                    <!-- CARD 5 -->
+                    <div class="col-12 col-sm-6 col-lg-2">
+
+                        <div class="d-flex align-items-center justify-content-center category-card">
+
+                            <div class="icon-circle me-3 text-white fs-3" style="background-color: #FFB61C;">
+
+                                <i class="bi bi-hospital"></i>
+
+                            </div>
+
+                            <div class="category-content lh-1">
+                                <h6 class="fw-bold">Autres</h6>
+                                <small>Plus d'info</small>
+                            </div>
+
+                        </div>
+
+                    </div>
+
                 </div>
 
             </div>
 
         </div>
+    </div>
+
+    <div class="d-block d-lg-none">
+        <!-- TOP BAR -->
+        <div class="text-white text-center py-2 small" style="background-color:#3EB3BD;">
+            Livraison gratuite dès 10.000 FCFA
+        </div>
+
+        <!-- HEADER -->
+        <nav class="navbar navbar-light bg-white shadow-sm">
+
+            <div class="container-fluid">
+
+                <a class="navbar-brand" href="#">
+                    <img src="Pharma Ressources/Home-Images/Brand-Logo.png" alt="Logo" height="40">
+                </a>
+
+                <div class="d-flex align-items-center gap-3">
+
+                    <i class="bi bi-search fs-5"></i>
+
+                    <i class="bi bi-heart fs-5"></i>
+
+                    <i class="bi bi-bag fs-5"></i>
+
+                    <button class="navbar-toggler border-0" type="button" data-bs-toggle="offcanvas"
+                        data-bs-target="#mobileMenu">
+
+                        <span class="navbar-toggler-icon"></span>
+
+                    </button>
+
+                </div>
+
+            </div>
+
+        </nav>
+
+        <div class="offcanvas offcanvas-end" tabindex="-1" id="mobileMenu">
+
+            <div class="offcanvas-header">
+
+                <h5 class="offcanvas-title">Menu</h5>
+
+                <button type="button" class="btn-close" data-bs-dismiss="offcanvas">
+                </button>
+
+            </div>
+
+            <div class="offcanvas-body">
+
+                <ul class="navbar-nav">
+
+                    <li class="nav-item">
+                        <a class="nav-link" href="index.html">Home</a>
+                    </li>
+
+                    <li class="nav-item">
+                        <a class="nav-link" href="Shop.html">Shop</a>
+                    </li>
+
+                    <li class="nav-item">
+                        <a class="nav-link" href="#">Blogs</a>
+                    </li>
+
+                    <li class="nav-item">
+                        <a class="nav-link" href="#">Page</a>
+                    </li>
+
+                    <li class="nav-item">
+                        <a class="nav-link" href="#">On Sale</a>
+                    </li>
+
+                    <li class="nav-item">
+                        <a class="nav-link" href="#">Contact</a>
+                    </li>
+
+                    <hr>
+
+                    <li class="nav-item">
+                        <a class="nav-link" href="administrateur.html">
+                            Sign In / Sign Up
+                        </a>
+                    </li>
+
+                </ul>
+
+            </div>
+
+        </div>
+
     </div>
 
 <!-- DETAIL PRODUIT -->
@@ -463,6 +666,113 @@
     </section>
 
     <!-- NEWSLETTER -->
+     <div class="container mt-5">
+            <h2 class="text-center text-md-start mb-4">Ce que disent nos clients</h2>
+
+            <div class="row g-4">
+                <!-- Card -->
+                <div class="col-12 col-sm-6 col-lg-3">
+                    <div class="card border-0 h-100 blog-card align-items-center">
+
+                        <div class="d-flex align-items-center gap-2 text-warning mb-2">
+                            <i class="bi bi-star-fill"></i>
+                            <i class="bi bi-star-fill"></i>
+                            <i class="bi bi-star-fill"></i>
+                            <i class="bi bi-star-half"></i>
+                            <i class="bi bi-star"></i>
+                        </div>
+                        <div class="text-center">
+                            <p>Lorem ipsum dolor sit amet, consectetur adipisicing elit. Pariatur fugiat, tempora
+                                tenetur natus blanditiis incidunt nisi sequi in optio nulla modi quo perferendis, ut
+                                obcaecati ratione tempore aliquam expedita unde.</p>
+                        </div>
+                        <div class="mt-3 text-center">
+                            <img src="Pharma Ressources/Home-Images/testimonials-4.jpg" alt="blog"
+                                class="rounded-circle"
+                                style="width: 120px !important; height: 120px !important; object-fit: cover;">
+                            <h6 class="fw-bold mb-0 mt-3">First Name</h6>
+                            <p class="text-muted">18 Aout 2020</p>
+                        </div>
+                    </div>
+                </div>
+                <div class="col-12 col-sm-6 col-lg-3">
+                    <div class="card border-0 h-100 blog-card align-items-center">
+
+                        <div class="d-flex align-items-center gap-2 text-warning mb-2">
+                            <i class="bi bi-star-fill"></i>
+                            <i class="bi bi-star-fill"></i>
+                            <i class="bi bi-star-fill"></i>
+                            <i class="bi bi-star-half"></i>
+                            <i class="bi bi-star"></i>
+                        </div>
+                        <div class="text-center">
+                            <p>Lorem ipsum dolor sit amet, consectetur adipisicing elit. Pariatur fugiat, tempora
+                                tenetur natus blanditiis incidunt nisi sequi in optio nulla modi quo perferendis, ut
+                                obcaecati ratione tempore aliquam expedita unde.</p>
+                        </div>
+                        <div class="mt-3 text-center">
+                            <img src="Pharma Ressources/Home-Images/testimonials-5.jpg" alt="blog"
+                                class="rounded-circle"
+                                style="width: 120px !important; height: 120px !important; object-fit: cover;">
+                            <h6 class="fw-bold mb-0 mt-3">First Name</h6>
+                            <p class="text-muted">18 Aout 2020</p>
+                        </div>
+                    </div>
+                </div>
+                <div class="col-12 col-sm-6 col-lg-3">
+                    <div class="card border-0 h-100 blog-card align-items-center">
+
+                        <div class="d-flex align-items-center gap-2 text-warning mb-2">
+                            <i class="bi bi-star-fill"></i>
+                            <i class="bi bi-star-fill"></i>
+                            <i class="bi bi-star-fill"></i>
+                            <i class="bi bi-star-half"></i>
+                            <i class="bi bi-star"></i>
+                        </div>
+                        <div class="text-center">
+                            <p>Lorem ipsum dolor sit amet, consectetur adipisicing elit. Pariatur fugiat, tempora
+                                tenetur natus blanditiis incidunt nisi sequi in optio nulla modi quo perferendis, ut
+                                obcaecati ratione tempore aliquam expedita unde.</p>
+                        </div>
+                        <div class="mt-3 text-center">
+                            <img src="Pharma Ressources/Home-Images/testimonials-6.jpg" alt="blog"
+                                class="rounded-circle"
+                                style="width: 120px !important; height: 120px !important; object-fit: cover;">
+                            <h6 class="fw-bold mb-0 mt-3">First Name</h6>
+                            <p class="text-muted">18 Aout 2020</p>
+                        </div>
+                    </div>
+                </div>
+                <div class="col-12 col-sm-6 col-lg-3">
+                    <div class="card border-0 h-100 blog-card align-items-center">
+
+                        <div class="d-flex align-items-center gap-2 text-warning mb-2">
+                            <i class="bi bi-star-fill"></i>
+                            <i class="bi bi-star-fill"></i>
+                            <i class="bi bi-star-fill"></i>
+                            <i class="bi bi-star-half"></i>
+                            <i class="bi bi-star"></i>
+                        </div>
+                        <div class="text-center">
+                            <p>Lorem ipsum dolor sit amet, consectetur adipisicing elit. Pariatur fugiat, tempora
+                                tenetur natus blanditiis incidunt nisi sequi in optio nulla modi quo perferendis, ut
+                                obcaecati ratione tempore aliquam expedita unde.</p>
+                        </div>
+                        <div class="mt-3 text-center">
+                            <img src="Pharma Ressources/Home-Images/testimonials-7.jpg" alt="blog"
+                                class="rounded-circle"
+                                style="width: 120px !important; height: 120px !important; object-fit: cover;">
+                            <h6 class="fw-bold mb-0 mt-3">First Name</h6>
+                            <p class="text-muted">18 Aout 2020</p>
+                        </div>
+                    </div>
+                </div>
+            </div>
+            <div class="align-items-center text-center mt-5">
+                <h6 class="fw-bold">Inscrivez vous à notre newsletter</h6>
+                <p>Rejoignez 60 000+ nouveau adhérents et obtenez un nouveau coupon de réduction chaque samedi</p>
+            </div>
+        </div>
     <div class="container mt-5">
             <div class="row justify-content-center g-4">
                 <div class="col-12 col-md-6 col-lg-4">

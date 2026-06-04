@@ -287,37 +287,35 @@ body {
 }
 
 .carde {
-    max-width: 1200px;
+  max-width: 1200px;
 }
 
 .image-preview {
-    width: 250px;
-    height: 150px;
+  width: 250px;
+  height: 150px;
 }
 
 .add-slot {
-    width: 250px;
-    height: 150px;
-    cursor: pointer;
-    transition: .3s;
+  width: 250px;
+  height: 150px;
+  cursor: pointer;
+  transition: 0.3s;
 }
 
 .add-slot:hover {
-    background-color: rgba(13, 202, 240, 0.1);
+  background-color: rgba(13, 202, 240, 0.1);
 }
 
 @media (max-width: 768px) {
-
-    .image-preview,
-    .add-slot {
-        width: 100%;
-        max-width: 320px;
-        margin: auto;
-    }
+  .image-preview,
+  .add-slot {
+    width: 100%;
+    max-width: 320px;
+    margin: auto;
+  }
 }
 
 @media (max-width: 1024px) {
-
   .custom-tooltip,
   .custom-tooltip2,
   .custom-tooltip3 {
@@ -378,6 +376,22 @@ body {
     left: 85%;
     font-size: 0.9rem;
   }
+  .imagec,
+  .imagef {
+    min-height: 280px !important;
+  }
+
+  .imaged,
+  .imagee {
+    min-height: 220px !important;
+  }
+
+  .imagec,
+  .imaged,
+  .imagee,
+  .imagef {
+    background-size: 150px, cover;
+  }
 }
 
 /* MOBILE */
@@ -386,13 +400,32 @@ body {
   .imaged,
   .imagee,
   .imagef {
-    background-size: 120px, cover;
-    min-height: 180px !important;
+    min-height: 240px !important;
+    background-size: 100px, cover;
+    padding: 1.5rem !important;
   }
 
-  .imageb {
-    background-size: 150px;
-    min-height: 350px !important;
+  .imagec h2,
+  .imagef h2 {
+    font-size: 1.6rem;
+  }
+
+  .imaged h3,
+  .imagee h3 {
+    font-size: 1.3rem;
+  }
+
+  .imagec p,
+  .imagee p,
+  .imagef p {
+    font-size: 0.9rem;
+  }
+
+  .imagec .btn,
+  .imaged .btn,
+  .imagee .btn,
+  .imagef .btn {
+    font-size: 0.85rem;
   }
 
   .promo-banner .card-body {
@@ -485,5 +518,20 @@ body {
 
   .custom-tooltip3 {
     top: 110%;
+  }
+}
+
+@media (max-width: 576px) {
+  .imagec,
+  .imagef {
+    background-position: right 10px bottom 10px;
+  }
+
+  .imaged {
+    background-position: left bottom;
+  }
+
+  .imagee {
+    background-position: right bottom;
   }
 }
